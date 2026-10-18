@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="monoIvory" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9EA" />
+      <stop offset="100%" stop-color="#D1BE93" />
+    </linearGradient>
+    <linearGradient id="crimsonAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E62035" />
+      <stop offset="100%" stop-color="#8A0012" />
+    </linearGradient>
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#634B11" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Hexagonal / Shield Medallion -->
+  <polygon points="250,25 440,110 440,360 250,470 60,360 60,110" 
+           fill="#0C0D11" stroke="url(#shieldBorder)" stroke-width="3.5" />
+  <polygon points="250,38 424,116 424,352 250,454 76,352 76,116" 
+           fill="none" stroke="#8B0000" stroke-width="1.5" opacity="0.5" />
+
+  <!-- Imperial Ronin Crown (From DussT's sash/coat emblem) -->
+  <path d="M 195 125 L 210 160 L 250 115 L 290 160 L 305 125 L 315 175 L 185 175 Z" 
+        fill="url(#monoIvory)" stroke="#111" stroke-width="1.5" />
+  <circle cx="195" cy="122" r="3.5" fill="#D4AF37" />
+  <circle cx="250" cy="112" r="4.5" fill="#D4AF37" />
+  <circle cx="305" cy="122" r="3.5" fill="#D4AF37" />
+
+  <!-- Stylized Interlocking 'D' and 'T' -->
+  <!-- Gothic D in Antique Ivory -->
+  <path d="M 160 190 L 220 190 C 275 190 310 215 310 265 C 310 315 275 340 220 340 L 160 340 Z 
+           M 196 226 L 196 304 L 218 304 C 250 304 272 290 272 265 C 272 240 250 226 218 226 Z" 
+        fill="url(#monoIvory)" />
+
+  <!-- Crimson Slashed Katana 'T' Intersecting the D -->
+  <path d="M 235 200 L 345 200 L 340 226 L 302 226 L 270 380 L 235 380 L 265 226 L 235 226 Z" 
+        fill="url(#crimsonAccent)" />
+
+  <!-- Hourglass Talisman Accent at Bottom -->
+  <g transform="translate(250, 415)" fill="none" stroke="#D4AF37" stroke-width="1.5">
+    <polygon points="-8,-10 8,-10 0,0 8,10 -8,10 0,0" fill="#221A06" />
+    <line x1="-10" y1="-10" x2="10" y2="-10" />
+    <line x1="-10" y1="10" x2="10" y2="10" />
+  </g>
+</svg>
