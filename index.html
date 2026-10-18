@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DussT — Enter The Duss Vxrse | Official Artist Website</title>
+  <title>DussT | Official Underground Artist Website | Enter The Duss Vxrse</title>
   
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Official website of underground recording artist DussT. Enter the Duss Vxrse to explore dark gothic hip-hop, official single FREEVXRSE, visual character lore, brand identity suite, and The Sanctum community.">
-  <meta name="keywords" content="DussT, Enter The Duss Vxrse, FREEVXRSE, The Sanctum, underground hip-hop, gothic rap, alternative music, Quady Oseni, OQ animator, DussT logo">
+  <meta name="description" content="Official website of underground recording artist DussT. Enter the Duss Vxrse to explore dark gothic hip-hop, official release FREEVXRSE, visual character lore, and The Sanctum worldwide community.">
+  <meta name="keywords" content="DussT, Enter The Duss Vxrse, FREEVXRSE, The Sanctum, underground hip-hop, gothic rap, Quady Oseni, OQ animator, DussT logo">
   <meta name="author" content="DussT & Quady Oseni (OQ)">
   
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="music.musician">
-  <meta property="og:title" content="DussT — Enter The Duss Vxrse | Official Website">
-  <meta property="og:description" content="Official home of underground music artist DussT. Stream FREEVXRSE, explore character lore and logo suite, and join The Sanctum community.">
+  <meta property="og:title" content="DussT | Enter The Duss Vxrse">
+  <meta property="og:description" content="Official home of underground music artist DussT. Stream FREEVXRSE, explore character lore, and join The Sanctum community.">
   <meta property="og:image" content="assets/images/dusst-freevxrse-art.png">
   <meta property="og:url" content="https://enterthedussvxrse.com">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/logos/dusst-logo-concept-3-monogram.svg">
 
-  <!-- Google Fonts: Cinzel Decorative, Cinzel, Plus Jakarta Sans, Space Mono -->
+  <!-- Typography: Plus Jakarta Sans & Space Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Master Stylesheets -->
+  <!-- Master Stylesheet (Klein Editorial Architecture) -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
 
-  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,1069 +39,691 @@
     "genre": "Underground / Gothic Hip-Hop / Alternative Rap",
     "url": "https://enterthedussvxrse.com",
     "image": "assets/images/dusst-freevxrse-art.png",
-    "logo": "assets/images/dusst-logo-concept-alembic.png",
-    "track": [
-      {
-        "@type": "MusicRecording",
-        "name": "FREEVXRSE",
-        "url": "https://enterthedussvxrse.com/#music"
-      }
-    ]
+    "logo": "assets/images/dusst-logo-concept-alembic.png"
   }
   </script>
 </head>
-<body class="page-home">
-  <!-- Accessibility Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<body class="editorial-v7">
+  <!-- Skip Navigation -->
+  <a href="#main" class="visually-hidden">Skip to main content</a>
 
-  <!-- Atmospheric Background Canvas (Active in Motion mode) -->
-  <canvas id="dusstCanvas" aria-hidden="true"></canvas>
-
-  <!-- Site Header & Navigation -->
+  <!-- SITE HEADER (KLEIN STICKY NAV) -->
   <header class="site-header" role="banner">
-    <div class="container nav-container">
-      <!-- Unified Brand Logo -->
-      <a href="index.html" class="brand-wrapper" aria-label="DussT Home">
-        <div class="brand-icon">
-          <img src="assets/images/dusst-logo-concept-alembic.png" alt="Official DussT Alembic Emblem">
-        </div>
-        <div>
-          <span class="brand-title">DussT</span>
-          <span class="brand-sub">The Duss Vxrse</span>
-        </div>
-      </a>
-
-      <!-- Navigation Links (One Unified Website) -->
-      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Main Navigation">
-        <a href="#hero" class="nav-link active">Home</a>
-        <a href="#music" class="nav-link">Music &amp; Releases</a>
-        <a href="#videos" class="nav-link">Videos</a>
-        <a href="#brand-identity" class="nav-link">Brand Identity</a>
-        <a href="#about" class="nav-link">About DussT</a>
-        <a href="#gallery" class="nav-link">Visual Vault</a>
-        <a href="#sanctum" class="nav-link">The Sanctum</a>
-        <a href="#creator" class="nav-link">Visuals by OQ</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-
-      <!-- Header Controls: Motion Switcher -->
-      <div class="nav-controls">
-        <button id="modeToggleBtn" class="mode-toggle-btn" aria-label="Toggle motion or static mode" title="Switch experience mode">
-          <span class="mode-toggle-indicator"></span>
-          <span id="modeToggleText">MOTION</span>
-        </button>
-
-        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
-          ☰
-        </button>
+    <a aria-label="DussT | back to home" class="brand-wordmark" href="#top">
+      <img alt="DussT Alembic Sigil" class="header-vector-logo" height="38" width="38" src="assets/images/dusst-logo-concept-alembic.png">
+      <div>
+        <span class="brand-title-text">DUSST</span>
+        <span class="brand-title-sub">THE DUSS VXRSE</span>
       </div>
-    </div>
+    </a>
+
+    <nav aria-label="Primary" class="desktop-nav">
+      <a href="#releases">MUSIC</a>
+      <a href="#videos">VIDEOS</a>
+      <a href="#brand-identity">IDENTITY</a>
+      <a href="#about">ABOUT</a>
+      <a href="#sanctum">THE SANCTUM</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#creator">CREATOR</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <a class="header-cta" href="#contact">
+      BOOK NOW <span>↗</span>
+    </a>
+
+    <button aria-controls="mobile-menu" aria-expanded="false" class="menu-toggle" type="button">
+      Menu
+    </button>
   </header>
 
-  <!-- Main Content Landmark -->
-  <main id="main-content" class="main-content">
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile Navigation">
+      <a href="#top">HOME <span>↗</span></a>
+      <a href="#releases">MUSIC <span>↗</span></a>
+      <a href="#videos">VIDEOS <span>↗</span></a>
+      <a href="#brand-identity">IDENTITY <span>↗</span></a>
+      <a href="#about">ABOUT <span>↗</span></a>
+      <a href="#sanctum">THE SANCTUM <span>↗</span></a>
+      <a href="#gallery">GALLERY <span>↗</span></a>
+      <a href="#creator">CREATOR <span>↗</span></a>
+      <a href="#contact">BOOK NOW <span>↗</span></a>
+    </nav>
+    <div class="mobile-menu-meta">
+      <span>DUSST OFFICIAL</span>
+      <a href="mailto:oseniquady53@gmail.com">oseniquady53@gmail.com ↗</a>
+    </div>
+  </div>
 
-    <!-- 1. CINEMATIC HERO SECTION WITH LOGO REVEAL -->
-    <section id="hero" class="hero-section" aria-label="Hero Section">
-      <div class="container">
-        <div class="hero-grid">
-          <!-- Hero Text -->
-          <div class="hero-content reveal-on-scroll">
-            
-            <!-- Prominent Logo Reveal -->
-            <div class="hero-logo-reveal">
-              <div class="hero-logo-crest">
-                <img src="assets/images/dusst-logo-concept-alembic.png" alt="Official DussT Logo Alembic Sigil">
-              </div>
-              <div>
-                <span class="hero-badge" style="margin-bottom: 0;">✦ OFFICIAL ARTIST PORTAL</span>
-                <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-gold); letter-spacing: 0.15em; margin-top: 4px;">
-                  ENTER THE DUSST VXRSE
-                </div>
-              </div>
-            </div>
+  <!-- MAIN CONTENT -->
+  <main id="main">
 
-            <h1 class="hero-title">
-              ENTER THE <br>
-              <span class="highlight-crimson">DUSST VXRSE</span>
-            </h1>
-            <p class="hero-subtitle">
-              The dark, cinematic sanctuary of underground recording artist <strong>DussT</strong>. Raw emotional truth, uncompromised lyricism, and gothic visual mythos.
-            </p>
-            <div class="hero-quote">
-              "Don't kick the Duss Up — From the ashes of struggle, true sound rises."
-            </div>
-
-            <!-- Primary Actions -->
-            <div class="hero-actions">
-              <a href="#music" class="btn btn-primary btn-lg">EXPLORE MUSIC &amp; RELEASES</a>
-              <a href="#videos" class="btn btn-secondary btn-lg">WATCH VISUALIZER</a>
-              <a href="#brand-identity" class="btn btn-outline btn-lg">BRAND IDENTITY SUITE</a>
-            </div>
-
-            <!-- Polished Audio Status HUD (Zero Autoplay, Clean State) -->
-            <div class="audio-player-bar">
-              <div class="player-controls">
-                <button id="playerPlayBtn" class="play-toggle-btn" aria-label="Audio player information">
-                  <span id="playerPlayIcon">▶</span>
-                </button>
-              </div>
-              <div class="player-track-info">
-                <div id="playerTrackTitle" class="player-track-name">FREEVXRSE (Official Lead Single)</div>
-                <div id="playerTimeDisplay" class="player-track-time">Studio Master • Releasing Soon</div>
-              </div>
-              <div class="player-timeline-wrapper">
-                <div id="playerTimeline" class="timeline-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                  <div id="playerTimelineFill" class="timeline-fill"></div>
-                </div>
-              </div>
-              <div class="waveform-indicator" aria-hidden="true" style="display: flex; gap: 3px; align-items: flex-end; height: 18px;">
-                <span class="waveform-anim-bar"></span>
-                <span class="waveform-anim-bar"></span>
-                <span class="waveform-anim-bar"></span>
-                <span class="waveform-anim-bar"></span>
-                <span class="waveform-anim-bar"></span>
-              </div>
-            </div>
-            <audio id="mainAudio" preload="none"></audio>
-          </div>
-
-          <!-- Hero Visual: Character Showcase Card -->
-          <div class="hero-visual-card reveal-on-scroll delay-1">
-            <div class="hero-card-frame anim-breathe">
-              <img 
-                src="assets/images/dusst-shadow-ronin-front.png" 
-                alt="DussT hooded ninja assassin character with dual katanas and red trim" 
-                class="hero-character-img"
-              >
-              <div class="hero-card-overlay">
-                <span class="hero-card-tag">CHARACTER LORE // 01</span>
-                <h2 class="hero-card-name">THE SHADOW RONIN</h2>
-                <p class="hero-card-desc">Armored alter-ego bearing the hourglass of fleeting time and twin blades of creative autonomy.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- HERO SECTION (KLEIN BRAND HERO WITH CINEMATIC VIDEO) -->
+    <section aria-labelledby="hero-title" class="hero brand-hero brand-hero--video" id="top">
+      <div aria-hidden="true" class="brand-hero__media">
+        <video loop muted playsinline poster="assets/images/dusst-freevxrse-art.png">
+          <source src="assets/videos/dusst-visualizer.mp4" type="video/mp4">
+        </video>
+        <div class="brand-hero__film-overlay"></div>
       </div>
-    </section>
 
-    <!-- 2. MUSIC RELEASES — HORIZONTAL MOTION CAROUSEL -->
-    <section id="music" class="section" style="background: rgba(10, 11, 16, 0.7);" aria-label="Music Releases">
-      <div class="container">
-        <div class="carousel-section-header">
-          <div>
-            <div class="section-tag">// 01 DISCOGRAPHY &amp; SOUNDSCAPES</div>
-            <h2 class="section-title">MUSIC &amp; <span class="text-crimson">RELEASES</span></h2>
-            <p class="section-desc">
-              Browse DussT's discography archive. Swipe horizontally on mobile or use the navigation arrows.
-            </p>
-          </div>
-          <div class="carousel-header-controls">
-            <button class="carousel-arrow-btn prev-btn" data-carousel-prev="releasesCarousel" aria-label="Previous Release">⟨</button>
-            <button class="carousel-arrow-btn next-btn" data-carousel-next="releasesCarousel" aria-label="Next Release">⟩</button>
-          </div>
-        </div>
-
-        <!-- Horizontal Carousel Track -->
-        <div class="horizontal-carousel-wrapper" data-carousel-id="releasesCarousel">
-          <div class="horizontal-carousel-track" id="releasesCarousel">
-            
-            <!-- Release 1: FREEVXRSE -->
-            <div class="carousel-card">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-freevxrse-art.png" alt="FREEVXRSE official cover artwork">
-                <span class="release-status-badge">LEAD SINGLE</span>
-              </div>
-              <div class="release-meta" style="margin-bottom: 8px;">
-                <span>✦ OFFICIAL SINGLE</span> • <span class="text-gold">MASTER CUT</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.5rem; color: var(--color-text-ivory); margin-bottom: 8px;">
-                FREEVXRSE
-              </h3>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px; flex: 1;">
-                "Free your verse. Give what you hold deepest." The crowd offers their hearts, minds, and breath before the artist's podium under the watchful eye.
-              </p>
-              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                <button class="btn btn-primary btn-sm" data-open-visualizer data-video-url="assets/videos/dusst-visualizer.mp4">
-                  ▶ WATCH VIDEO
-                </button>
-                <button class="btn btn-outline btn-sm" data-play-track data-track-name="FREEVXRSE">
-                  ♫ AUDIO INFO
-                </button>
-              </div>
-            </div>
-
-            <!-- Release 2: Brand New Day -->
-            <div class="carousel-card" style="border-color: var(--border-gold);">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-casual-avatar-front.png" alt="Brand New Day studio visual">
-                <span class="release-status-badge" style="border-color: var(--color-gold); color: var(--color-gold);">IN PRODUCTION</span>
-              </div>
-              <div class="release-meta" style="margin-bottom: 8px;">
-                <span>✦ UPCOMING SINGLE</span> • <span class="text-gold">STUDIO PIPELINE</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.5rem; color: var(--color-text-ivory); margin-bottom: 8px;">
-                Brand New Day
-              </h3>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px; flex: 1;">
-                Currently in arrangement with collaborator Quady Oseni (OQ). Setting the BPM, structuring transition points, and animating matching sequences.
-              </p>
-              <div style="padding: 8px 12px; background: rgba(200, 168, 72, 0.1); border-radius: var(--radius-sm); border-left: 2px solid var(--color-gold); font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold);">
-                ✦ Artist Note: "Demo recorded — transition points in progress"
-              </div>
-            </div>
-
-            <!-- Release 3: Don't Kick The Duss Up EP -->
-            <div class="carousel-card" style="border-color: var(--border-crimson);">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-logo-concept-alembic.png" alt="Don't Kick The Duss Up EP concept">
-                <span class="release-status-badge" style="border-color: var(--color-crimson); color: #ff9da6;">CONCEPT EP</span>
-              </div>
-              <div class="release-meta" style="margin-bottom: 8px;">
-                <span>✦ FLAGSHIP EP</span> • <span class="text-gold">THE SANCTUM LORE</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.5rem; color: var(--color-text-ivory); margin-bottom: 8px;">
-                Don't Kick The Duss Up
-              </h3>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px; flex: 1;">
-                The alchemical body of work encapsulating the genesis of the Duss Vxrse. Conceived alongside the founding manifesto of The Sanctum.
-              </p>
-              <a href="#sanctum" class="btn btn-outline btn-sm">JOIN PRE-SAVE WAITLIST →</a>
-            </div>
-
-            <!-- Release 4: The Dust Rises Session -->
-            <div class="carousel-card">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-shadow-ronin-front.png" alt="The Dust Rises studio session">
-                <span class="release-status-badge">STUDIO ARCHIVE</span>
-              </div>
-              <div class="release-meta" style="margin-bottom: 8px;">
-                <span>✦ DEMO VAULT</span> • <span class="text-gold">RAW CUTS</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.5rem; color: var(--color-text-ivory); margin-bottom: 8px;">
-                The Dust Rises
-              </h3>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px; flex: 1;">
-                Gothic vocal sketches and dark atmospheric soundscapes recorded during early formulation of the Duss Vxrse mythos.
-              </p>
-              <span class="stream-btn disabled" style="font-size: 0.75rem;">🔒 Studio Vault</span>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Music Streaming Platforms Hub (Separated from Socials) -->
-        <div style="margin-top: 36px; padding: 24px 30px; background: rgba(15, 16, 23, 0.7); border: 1px solid var(--border-card); border-radius: var(--radius-md);">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-            <div>
-              <span class="section-tag" style="margin-bottom: 4px;">MUSIC STREAMING CHANNELS</span>
-              <h4 style="font-family: var(--font-gothic); font-size: 1.2rem; color: var(--color-text-ivory);">
-                Digital Service Providers (DSPs)
-              </h4>
-            </div>
-            <div class="streaming-buttons" style="margin-top: 0;">
-              <span class="stream-btn disabled" title="Spotify artist profile pending digital distribution">
-                🎧 Spotify (Setup In Progress)
-              </span>
-              <span class="stream-btn disabled" title="Apple Music link pending upload">
-                🍎 Apple Music (Setup In Progress)
-              </span>
-              <span class="stream-btn disabled" title="SoundCloud link pending upload">
-                ☁️ SoundCloud (Upload Pipeline)
-              </span>
-              <span class="stream-btn" style="border-color: var(--color-gold); color: var(--color-gold);">
-                🎬 On-Site Video Stream (Available Below)
-              </span>
-            </div>
-          </div>
-        </div>
+      <div class="brand-hero__brand">
+        <h1 class="brand-hero__title" id="hero-title">
+          <span class="visually-hidden">DussT — Enter The Duss Vxrse</span>
+          <img alt="DussT Official Emblem" class="hero-vector-logo" height="420" width="420" src="assets/images/dusst-logo-concept-alembic.png">
+        </h1>
+        <p class="hero-logo-caption">ENTER THE DUSST VXRSE : OFFICIAL ARTIST PORTAL</p>
       </div>
-    </section>
 
-    <!-- 3. DIRECT VIDEO SHOWCASE & HORIZONTAL CAROUSEL -->
-    <section id="videos" class="section" aria-label="Official Videos">
-      <div class="container">
-        <div class="carousel-section-header">
-          <div>
-            <div class="section-tag">// 02 DIRECT VIDEO VAULT</div>
-            <h2 class="section-title">OFFICIAL <span class="text-crimson">VIDEOS &amp; VISUALIZERS</span></h2>
-            <p class="section-desc">
-              Watch official music videos and animated visualizers directly on the website with native 1080p playback.
-            </p>
-          </div>
-          <div class="carousel-header-controls">
-            <button class="carousel-arrow-btn prev-btn" data-carousel-prev="videosCarousel" aria-label="Previous Video">⟨</button>
-            <button class="carousel-arrow-btn next-btn" data-carousel-next="videosCarousel" aria-label="Next Video">⟩</button>
-          </div>
-        </div>
-
-        <!-- Featured Main Video Player Frame (Direct MP4 Playback, No Google Drive Links) -->
-        <div class="cinematic-video-frame" style="margin-bottom: 32px;">
-          <video 
-            id="featuredVisualizerVideo" 
-            controls 
-            preload="metadata" 
-            poster="assets/images/dusst-freevxrse-art.png"
-            title="FREEVXRSE Official Master Visualizer"
-          >
-            <source src="assets/videos/dusst-visualizer.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-          <div id="videoPlayOverlay" class="video-play-overlay">
-            <button class="play-toggle-btn" style="width: 68px; height: 68px; font-size: 1.4rem;" aria-label="Play Master Visualizer">
-              ▶
-            </button>
-          </div>
-        </div>
-
-        <!-- Horizontal Video Carousel Track -->
-        <div class="horizontal-carousel-wrapper" data-carousel-id="videosCarousel">
-          <div class="horizontal-carousel-track" id="videosCarousel">
-            
-            <!-- Video Card 1 -->
-            <div class="carousel-card video-card">
-              <div class="video-card-thumb">
-                <img src="assets/images/dusst-freevxrse-art.png" alt="FREEVXRSE video thumb">
-                <span class="video-runtime-pill">MASTER CUT</span>
-              </div>
-              <span class="section-tag" style="margin-bottom: 4px;">ANIMATED MUSIC VIDEO</span>
-              <h3 style="font-family: var(--font-serif-clean); font-size: 1.15rem; color: var(--color-text-ivory); margin-bottom: 6px;">
-                FREEVXRSE Master Visualizer
-              </h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1;">
-                Directed &amp; animated by Quady Oseni (OQ). High-contrast graphic novel sequences of the underground congregation.
-              </p>
-              <button class="btn btn-primary btn-sm" data-open-visualizer data-video-url="assets/videos/dusst-visualizer.mp4">
-                ▶ PLAY IN THEATER MODAL
-              </button>
-            </div>
-
-            <!-- Video Card 2 -->
-            <div class="carousel-card video-card">
-              <div class="video-card-thumb">
-                <img src="assets/images/dusst-shadow-ronin.png" alt="Shadow Ronin motion reel">
-                <span class="video-runtime-pill">3D TEASER</span>
-              </div>
-              <span class="section-tag" style="margin-bottom: 4px;">CHARACTER REEL</span>
-              <h3 style="font-family: var(--font-serif-clean); font-size: 1.15rem; color: var(--color-text-ivory); margin-bottom: 6px;">
-                The Shadow Ronin 3D Reel
-              </h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1;">
-                Turnaround and aesthetic breakdown for DussT's armored alter-ego featuring dual katanas and hourglass medallion.
-              </p>
-              <button class="btn btn-secondary btn-sm" data-open-visualizer data-video-url="assets/videos/dusst-visualizer.mp4">
-                ▶ WATCH 3D REEL
-              </button>
-            </div>
-
-            <!-- Video Card 3 -->
-            <div class="carousel-card video-card">
-              <div class="video-card-thumb">
-                <img src="assets/images/dusst-casual-avatar.png" alt="Studio sessions teaser">
-                <span class="video-runtime-pill">STUDIO ARCHIVE</span>
-              </div>
-              <span class="section-tag" style="margin-bottom: 4px;">CREATIVE PROCESS</span>
-              <h3 style="font-family: var(--font-serif-clean); font-size: 1.15rem; color: var(--color-text-ivory); margin-bottom: 6px;">
-                Brand New Day Studio Arrangement
-              </h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1;">
-                Behind-the-scenes glimpses of BPM transitions and collaborative animation timing between DussT and OQ.
-              </p>
-              <button class="btn btn-outline btn-sm" data-open-visualizer data-video-url="assets/videos/dusst-visualizer.mp4">
-                ▶ WATCH SESSION TEASER
-              </button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. INTEGRATED BRAND IDENTITY & LOGO SUITE (Woven Seamlessly Into Main Site) -->
-    <section id="brand-identity" class="section" style="background: rgba(14, 15, 23, 0.75);" aria-label="Brand Identity Studio">
-      <div class="container">
-        <div class="section-tag">// 03 BRAND IDENTITY &amp; LOGO SUITE</div>
-        <h2 class="section-title">THE DUSST <span class="text-gold">IDENTITY EXPLORATION</span></h2>
-        <p class="section-desc">
-          Created through close artistic collaboration between DussT and creator Quady Oseni (OQ). Test the logo concepts across dark and light canvases, inspect silhouettes, and download vector SVG and high-res transparent PNG files.
+      <div class="brand-hero__meta">
+        <p class="brand-hero__entity">
+          DARK TRAP / GOTHIC HIP-HOP / ANIME CINEMATIC : <span>ENTER THE DUSST VXRSE</span>
         </p>
-
-        <!-- Concept Selection Tabs -->
-        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 32px 0 20px 0;">
-          <button class="btn btn-primary concept-tab-btn active" data-concept="concept-1">
-            CONCEPT 01 // GOTHIC WORDMARK
-          </button>
-          <button class="btn btn-outline concept-tab-btn" data-concept="concept-2">
-            CONCEPT 02 // ALCHEMICAL SIGIL
-          </button>
-          <button class="btn btn-outline concept-tab-btn" data-concept="concept-3">
-            CONCEPT 03 // RONIN MONOGRAM CREST
-          </button>
-          <button class="btn btn-outline concept-tab-btn" data-concept="reference">
-            AUTHENTIC MASTER REFERENCE
-          </button>
+        <div class="brand-hero__actions">
+          <a class="button button--solid" href="#releases">
+            EXPLORE MUSIC <span>↗</span>
+          </a>
+          <a class="button" href="#sanctum">
+            THE SANCTUM <span>↗</span>
+          </a>
         </div>
+      </div>
+    </section>
 
-        <!-- Integrated Studio Card -->
-        <div class="logo-studio-card">
-          <!-- Toolbar -->
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-subtle); margin-bottom: 24px;">
-            <!-- Surface Switcher -->
-            <div>
-              <span style="font-family: var(--font-serif-clean); font-size: 0.75rem; letter-spacing: 0.15em; color: var(--color-gold); text-transform: uppercase;">
-                Test Canvas Surface:
-              </span>
-              <div class="logo-palette-toolbar">
-                <button class="palette-swatch active" data-bg="stage-bg-dark" style="background: #050507;" title="Pitch Black (Dark Mode)"></button>
-                <button class="palette-swatch" data-bg="stage-bg-cream" style="background: #faf6eb;" title="Antique Parchment (Light Mode)"></button>
-                <button class="palette-swatch" data-bg="stage-bg-crimson" style="background: #300408;" title="Burgundy Crimson Velvet"></button>
-                <button class="palette-swatch" data-bg="stage-bg-olive" style="background: #1a2214;" title="Muted Olive Green"></button>
-              </div>
+    <!-- FORTHCOMING / LATEST RELEASE PROMO BAR (KLEIN EDITORIAL) -->
+    <aside aria-label="Latest release announcement" class="release-promo">
+      <div class="release-promo-inner">
+        <span class="release-promo-eyebrow">
+          LATEST SINGLE / 2026
+        </span>
+        <strong>
+          FREEVXRSE — DUSST
+        </strong>
+        <span class="release-promo-status">
+          STREAMING NOW ON ALL PLATFORMS
+        </span>
+        <a aria-label="See latest release by DussT" href="#releases">
+          DISCOVER THE MUSIC <span>↗</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- SECTION 1: MUSIC & DISCOGRAPHY (KLEIN NEW-MUSIC-GRID) -->
+    <section aria-labelledby="music-title" class="section music-section v7-home-music" id="releases">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2 id="music-title">
+            MUSIC<span class="punctuation">.</span>
+          </h2>
+          <a class="section-header-link" href="music.html">
+            FULL DISCOGRAPHY <span>↗</span>
+          </a>
+        </div>
+        <p class="section-lead">OFFICIAL DISCOGRAPHY, UNRELEASED ARCHIVES &amp; UNDERGROUND SESSIONS</p>
+
+        <div class="new-music-grid">
+          <!-- Release 01: FREEVXRSE -->
+          <article class="new-music-card">
+            <div class="new-music-art">
+              <img alt="Cover artwork for FREEVXRSE by DussT" decoding="async" height="640" width="640" loading="lazy" src="assets/images/dusst-freevxrse-art.png">
             </div>
-
-            <!-- Scale Slider -->
-            <div style="display: flex; align-items: center; gap: 12px;">
-              <label for="logoSizeSlider" style="font-family: var(--font-serif-clean); font-size: 0.75rem; letter-spacing: 0.15em; color: var(--color-text-cream); text-transform: uppercase;">
-                Scale Tester:
-              </label>
-              <input type="range" id="logoSizeSlider" min="70" max="320" value="200" style="cursor: pointer; accent-color: var(--color-gold);">
-              <span id="logoSizeValue" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold); width: 45px;">200px</span>
+            <div class="new-music-meta">
+              <span>01 / DUSST</span>
+              <span class="status-tag">OUT NOW</span>
             </div>
-
-            <!-- Export Buttons -->
-            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-              <a id="downloadSvgBtn" href="assets/logos/dusst-logo-concept-1-wordmark.svg" download="concept-1-dusst.svg" class="btn btn-secondary btn-sm">
-                ⬇ EXPORT VECTOR (SVG)
+            <h3>FREEVXRSE</h3>
+            <div aria-label="Streaming and artist profiles" class="stream-links">
+              <a href="https://open.spotify.com" rel="noopener noreferrer" target="_blank">
+                SPOTIFY <span>↗</span>
               </a>
-              <button id="downloadPngBtn" class="btn btn-outline btn-sm">
-                ⬇ EXPORT PNG (1200px)
-              </button>
+              <a href="https://music.apple.com" rel="noopener noreferrer" target="_blank">
+                APPLE MUSIC <span>↗</span>
+              </a>
+              <a href="https://soundcloud.com" rel="noopener noreferrer" target="_blank">
+                SOUNDCLOUD <span>↗</span>
+              </a>
+              <a href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+                YOUTUBE <span>↗</span>
+              </a>
             </div>
-          </div>
+          </article>
 
-          <!-- Active Stage -->
-          <div id="logoStage" class="logo-display-stage stage-bg-dark">
-            <img id="logoStageImg" src="assets/logos/dusst-logo-concept-1-wordmark.svg" alt="Active Logo Display" style="max-height: 200px;">
-          </div>
-
-          <!-- Notes & Specs Grid -->
-          <div style="margin-top: 28px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px;">
-            <div>
-              <h3 id="activeConceptTitle" style="font-family: var(--font-gothic); font-size: 1.45rem; color: var(--color-text-ivory); margin-bottom: 8px;">
-                Concept 01: Gothic Display Wordmark
-              </h3>
-              <p id="activeConceptDesc" style="font-size: 0.95rem; color: var(--color-text-cream); line-height: 1.7;">
-                Chiseled antique ivory lettering framed by distressed gold filigree rules, featuring the artist's proverb 'Don't Kick The Duss Up'. Clear, commanding, and instantly recognizable across album covers, headers, and merchandise.
-              </p>
+          <!-- Release 02: SHADOW RONIN EP -->
+          <article class="new-music-card">
+            <div class="new-music-art">
+              <img alt="Character concept art for Shadow Ronin EP by DussT" decoding="async" height="640" width="640" loading="lazy" src="assets/images/dusst-shadow-ronin.png">
             </div>
-            <div style="background: rgba(8, 9, 13, 0.7); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 18px;">
-              <span class="section-tag" style="margin-bottom: 4px;">TECHNICAL SPECIFICATIONS</span>
-              <p id="activeConceptSpecs" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-gold); line-height: 1.6;">
-                Format: Vector SVG | Ratio: 10:3 | Best for: Website Headers, Merch Hoodies, Vinyl Covers
-              </p>
+            <div class="new-music-meta">
+              <span>02 / DUSST</span>
+              <span class="status-tag">IN PRODUCTION</span>
             </div>
-          </div>
+            <h3>SHADOW RONIN EP</h3>
+            <div aria-label="Streaming and artist profiles" class="stream-links">
+              <a href="https://soundcloud.com" rel="noopener noreferrer" target="_blank">
+                SOUNDCLOUD <span>↗</span>
+              </a>
+              <a href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+                YOUTUBE <span>↗</span>
+              </a>
+              <a href="#sanctum">
+                SANCTUM VAULT <span>↗</span>
+              </a>
+              <a href="#contact">
+                DSP ACCESS <span>↗</span>
+              </a>
+            </div>
+          </article>
 
-          <!-- Feedback Form directly on page -->
-          <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-            <h4 style="font-family: var(--font-serif-clean); font-size: 1.1rem; color: var(--color-gold); margin-bottom: 12px;">
-              ✦ Cast Collaborative Feedback &amp; Approvals
-            </h4>
-            <form id="logoFeedbackForm">
-              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
-                <div class="form-group">
-                  <label for="reviewerName" class="form-label">Reviewer Name</label>
-                  <input type="text" id="reviewerName" name="reviewerName" class="form-input" value="DussT">
-                </div>
-                <div class="form-group">
-                  <label for="preferredConcept" class="form-label">Preferred Concept Direction</label>
-                  <select id="preferredConcept" name="preferredConcept" class="form-select">
-                    <option value="Concept 01: Gothic Display Wordmark">Concept 01: Gothic Display Wordmark</option>
-                    <option value="Concept 02: Alchemical Alembic Sigil">Concept 02: Alchemical Alembic Sigil</option>
-                    <option value="Concept 03: The Ronin Monogram Crest">Concept 03: The Ronin Monogram Crest</option>
-                    <option value="Combine Wordmark with Monogram">Combine Wordmark with Monogram</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="designNotes" class="form-label">Design Feedback &amp; Notes</label>
-                <textarea id="designNotes" name="designNotes" class="form-textarea" rows="2" placeholder="e.g. Love the crimson katana slash on Concept 3, let's use it for embroidery and social avatars..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-sm">
-                ✦ RECORD FEEDBACK FOR CREATIVE DIRECTION
-              </button>
-              <div id="logoFeedbackMsg" class="form-feedback-box" style="display: none; margin-top: 14px;"></div>
-            </form>
-          </div>
+          <!-- Release 03: CASUAL VXRSE -->
+          <article class="new-music-card">
+            <div class="new-music-art">
+              <img alt="Casual DussT character artwork for Casual Vxrse demo" decoding="async" height="640" width="640" loading="lazy" src="assets/images/dusst-casual-avatar.png">
+            </div>
+            <div class="new-music-meta">
+              <span>03 / DUSST</span>
+              <span class="status-tag">STUDIO DEMO</span>
+            </div>
+            <h3>CASUAL VXRSE</h3>
+            <div aria-label="Streaming and artist profiles" class="stream-links">
+              <a href="https://soundcloud.com" rel="noopener noreferrer" target="_blank">
+                SOUNDCLOUD <span>↗</span>
+              </a>
+              <a href="https://open.spotify.com" rel="noopener noreferrer" target="_blank">
+                SPOTIFY <span>↗</span>
+              </a>
+              <a href="#gallery">
+                ARTWORK <span>↗</span>
+              </a>
+              <a href="#sanctum">
+                PREVIEW <span>↗</span>
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- 5. ABOUT DUSST & SYMBOLIC LORE -->
-    <section id="about" class="section" aria-label="About DussT">
-      <div class="container">
-        <div class="grid" style="grid-template-columns: 1.15fr 0.85fr; gap: 50px; align-items: start;">
-          <div>
-            <div class="section-tag">// 04 ARTIST ORIGIN &amp; PHILOSOPHY</div>
-            <h2 class="section-title">RISING FROM <br><span class="text-crimson">THE DUST</span></h2>
-            <div style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-cream); display: flex; flex-direction: column; gap: 18px;">
-              <p>
-                DussT is an independent music artist who refuses to compromise emotional vulnerability for commercial conformity. Operating from the underground, his work bridges haunting gothic atmosphere, razor-sharp lyricism, and poignant reflections on the human psyche.
-              </p>
-              <p>
-                In a culture frequently obsessed with superficial success, DussT’s music serves as both a confession box and a fortress. Every release is an excavation of personal struggle—transforming moments of despair, isolation, and quiet resilience into an immersive audio-visual universe known as the <em>Duss Vxrse</em>.
-              </p>
-            </div>
-
-            <!-- Proverb breakdown -->
-            <div style="margin-top: 32px; padding: 24px; background: var(--color-bg-card); border-left: 3px solid var(--color-gold); border-radius: var(--radius-sm);">
-              <div class="section-tag" style="margin-bottom: 4px;">CREED &amp; ETYMOLOGY</div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.3rem; color: var(--color-text-ivory); margin-bottom: 8px;">
-                "Don't Kick The Duss Up"
-              </h3>
-              <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.65;">
-                Dust represents the elemental origin of all existence: from dust we rise, to dust we return. <em>"Don't kick the Duss Up"</em> is a creed of self-discipline—a warning to guard inner stillness, honor the quiet healing process, and let the music speak for itself without unnecessary chaos.
-              </p>
-            </div>
-          </div>
-
-          <!-- Dual Identity Card -->
-          <div>
-            <div class="pillar-card" style="border-color: var(--border-gold); padding: 20px;">
-              <div style="border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 16px; border: 1px solid var(--border-card);">
-                <img src="assets/images/dusst-casual-avatar-front.png" alt="DussT Studio Creator visual" style="width: 100%; height: auto; display: block;">
-              </div>
-              <span class="pillar-num">THE DUAL IDENTITIES</span>
-              <h4 style="font-family: var(--font-gothic); font-size: 1.25rem; color: var(--color-text-ivory); margin-bottom: 6px;">
-                The Armor vs. The Human
-              </h4>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6;">
-                The armored <strong>Shadow Ronin</strong> shields against outside hostility; the <strong>Studio Architect</strong> in pink beanie and headphones confronts internal vulnerability behind the mixing console.
-              </p>
-            </div>
-          </div>
+    <!-- SECTION 2: VIDEOS & VISUALIZERS -->
+    <section aria-labelledby="videos-title" class="section video-section" id="videos">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2 id="videos-title">
+            VIDEOS<span class="punctuation">.</span>
+          </h2>
+          <span class="section-lead">NATIVE 1080P CINEMATIC VISUALIZERS &amp; ANIMATION REELS</span>
         </div>
 
-        <!-- 4 Symbols Grid -->
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 48px;">
-          <div class="pillar-card">
-            <span class="pillar-num">01 // ALCHEMY</span>
-            <h4 class="pillar-title" style="font-size: 1.1rem;">The Alembic Flask</h4>
-            <p class="pillar-text">Distilling raw lived experience and struggle into concentrated musical expression.</p>
+        <div class="video-feature-card">
+          <div class="video-container">
+            <video controls playsinline preload="metadata" poster="assets/images/dusst-freevxrse-art.png">
+              <source src="assets/videos/dusst-visualizer.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <div class="pillar-card">
-            <span class="pillar-num">02 // PROTECTION</span>
-            <h4 class="pillar-title" style="font-size: 1.1rem;">The Vapor Dagger</h4>
-            <p class="pillar-text">Rising smoke that sharpens into a blade—cutting through falseness and shielding creative truth.</p>
-          </div>
-          <div class="pillar-card">
-            <span class="pillar-num">03 // GROUNDING</span>
-            <h4 class="pillar-title" style="font-size: 1.1rem;">Botanical Canopy</h4>
-            <p class="pillar-text">Muted olive leaves symbolizing natural grounding, medicinal healing, and living resilience.</p>
-          </div>
-          <div class="pillar-card">
-            <span class="pillar-num">04 // MEMENTO MORI</span>
-            <h4 class="pillar-title" style="font-size: 1.1rem;">The Hourglass</h4>
-            <p class="pillar-text">An eternal reminder that time is scarce, urgent, and must be consecrated to meaningful art.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. VISUAL VAULT & ARTWORK — HORIZONTAL MOTION CAROUSEL -->
-    <section id="gallery" class="section" style="background: rgba(10, 11, 16, 0.7);" aria-label="Visual Gallery">
-      <div class="container">
-        <div class="carousel-section-header">
-          <div>
-            <div class="section-tag">// 05 THE VISUAL VAULT</div>
-            <h2 class="section-title">CHARACTER LORE &amp; <span class="text-gold">ARTWORKS</span></h2>
-            <p class="section-desc">
-              Official character turnaround sheets, cover posters, and brand sigils. Click any image to view in full-screen lightbox.
+          <div class="video-feature-info">
+            <span class="release-promo-eyebrow">OFFICIAL VISUALIZER / 1080P MASTER</span>
+            <h3>ENTER THE DUSST VXRSE</h3>
+            <p>
+              Direct on-site streaming of the official visualizer score created in collaboration with animator Quady Oseni (OQ). Featuring the Shadow Ronin avatar against dark smoke atmospherics and gothic typography.
             </p>
-          </div>
-          <div class="carousel-header-controls">
-            <button class="carousel-arrow-btn prev-btn" data-carousel-prev="galleryCarousel" aria-label="Previous Artwork">⟨</button>
-            <button class="carousel-arrow-btn next-btn" data-carousel-next="galleryCarousel" aria-label="Next Artwork">⟩</button>
-          </div>
-        </div>
-
-        <!-- Horizontal Gallery Carousel Track -->
-        <div class="horizontal-carousel-wrapper" data-carousel-id="galleryCarousel">
-          <div class="horizontal-carousel-track" id="galleryCarousel">
-            
-            <!-- Art 1 -->
-            <div class="gallery-card" data-lightbox data-src="assets/images/dusst-shadow-ronin.png" data-title="Shadow Ronin Master Model Sheet" data-caption="Full front and side profile model sheet with dual katanas and hourglass. Visuals by Quady Oseni (OQ).">
-              <img src="assets/images/dusst-shadow-ronin.png" alt="Shadow Ronin sheet" class="gallery-img">
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Character Lore</span>
-                <h3 class="gallery-card-title">Shadow Ronin Model Sheet</h3>
-              </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a class="button button--solid" href="#contact">
+                COLLABORATE WITH OQ <span>↗</span>
+              </a>
+              <a class="button" href="assets/videos/dusst-visualizer.mp4" download>
+                DOWNLOAD MASTER REEL <span>↓</span>
+              </a>
             </div>
-
-            <!-- Art 2 -->
-            <div class="gallery-card" data-lightbox data-src="assets/images/dusst-freevxrse-art.png" data-title="FREEVXRSE Master Illustrated Poster" data-caption="Graphic novel poster depicting the underground congregation offering their vital organs before the artist podium.">
-              <img src="assets/images/dusst-freevxrse-art.png" alt="FREEVXRSE poster" class="gallery-img">
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Cover Artwork</span>
-                <h3 class="gallery-card-title">FREEVXRSE Cover Master</h3>
-              </div>
-            </div>
-
-            <!-- Art 3 -->
-            <div class="gallery-card" data-lightbox data-src="assets/images/dusst-casual-avatar.png" data-title="The Studio Architect — Casual Identity Sheet" data-caption="Front and side view of DussT in pink beanie and monitoring headphones.">
-              <img src="assets/images/dusst-casual-avatar.png" alt="Casual avatar sheet" class="gallery-img">
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Character Lore</span>
-                <h3 class="gallery-card-title">The Studio Architect</h3>
-              </div>
-            </div>
-
-            <!-- Art 4 -->
-            <div class="gallery-card" data-lightbox data-src="assets/images/dusst-logo-concept-alembic.png" data-title="Alchemical Alembic Sigil" data-caption="Original alchemical logo reference: alembic potion flask, vapor dagger, and botanical leaves on solid black.">
-              <img src="assets/images/dusst-logo-concept-alembic.png" alt="Alembic sigil" class="gallery-img">
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Logos &amp; Sigils</span>
-                <h3 class="gallery-card-title">Gothic Alembic Sigil</h3>
-              </div>
-            </div>
-
-            <!-- Art 5 -->
-            <div class="gallery-card" data-lightbox data-src="assets/images/dusst-shadow-ronin-front.png" data-title="Shadow Ronin — Front Combat Stance" data-caption="Front view highlighting tactical gear, chest straps, and the royal sash cipher.">
-              <img src="assets/images/dusst-shadow-ronin-front.png" alt="Ronin front stance" class="gallery-img">
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Character Lore</span>
-                <h3 class="gallery-card-title">Ronin Front Combat Stance</h3>
-              </div>
-            </div>
-
-            <!-- Art 6 -->
-            <div class="gallery-card" data-lightbox data-src="assets/images/dusst-shadow-ronin-side.png" data-title="Shadow Ronin — Side Profile" data-caption="Side profile view showing dual katana scabbards and hooded duster silhouette.">
-              <img src="assets/images/dusst-shadow-ronin-side.png" alt="Ronin side view" class="gallery-img">
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Character Lore</span>
-                <h3 class="gallery-card-title">Ronin Side Profile</h3>
-              </div>
-            </div>
-
-            <!-- Art 7 -->
-            <div class="gallery-card" data-lightbox data-src="assets/images/dusst-casual-avatar-front.png" data-title="Studio Creator — Frontal Portrait" data-caption="Casual identity: graphic tee, studio headphones, and raw creative focus.">
-              <img src="assets/images/dusst-casual-avatar-front.png" alt="Studio creator front" class="gallery-img">
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Character Lore</span>
-                <h3 class="gallery-card-title">Studio Creator Portrait</h3>
-              </div>
-            </div>
-
-            <!-- Art 8 -->
-            <div class="gallery-card" data-lightbox data-src="assets/logos/dusst-logo-concept-3-monogram.svg" data-title="The Ronin Monogram Crest" data-caption="Vector monogram crest: interlocking ivory D and crimson katana slash T with royal crown.">
-              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #050507; padding: 24px;">
-                <img src="assets/logos/dusst-logo-concept-3-monogram.svg" alt="Ronin Monogram Crest" style="max-height: 85%; max-width: 85%;">
-              </div>
-              <div class="gallery-card-info">
-                <span class="gallery-card-cat">Logos &amp; Sigils</span>
-                <h3 class="gallery-card-title">Ronin Monogram Crest</h3>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 7. THE SANCTUM — COMMUNITY MANIFESTO & WAITLIST -->
-    <section id="sanctum" class="section sanctum-section" aria-label="The Sanctum Community">
-      <div class="container">
-        <div class="sanctum-header reveal-on-scroll">
-          <div class="section-tag">// 06 WORLDWIDE COMMUNITY VISION</div>
-          <h2 class="section-title">THE <span class="text-crimson">SANCTUM</span></h2>
-          <div class="sanctum-motto">
-            "Where artists find their voice, and the world learns to listen."
-          </div>
-          <p class="section-desc" style="margin-inline: auto;">
-            A safe, supportive worldwide community concept founded by DussT uniting music, mental health awareness, and creative empathy.
-          </p>
+    <!-- SECTION 3: BRAND IDENTITY & LOGO SUITE -->
+    <section aria-labelledby="brand-title" class="section brand-section" id="brand-identity">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2 id="brand-title">
+            IDENTITY<span class="punctuation">.</span>
+          </h2>
+          <span class="section-lead">COLLABORATIVE LOGO SYSTEM &amp; SYMBOLOGY CO-DESIGNED WITH QUADY OSENI</span>
         </div>
 
-        <!-- Honest Pre-launch status banner -->
-        <div class="prelaunch-banner" style="max-width: 820px; margin-inline: auto;">
-          <span class="badge-pill">PRE-LAUNCH PHASE</span>
-          <div>
-            <strong>Transparent Community Status:</strong> The Sanctum is currently in the formulation and waitlist phase. The full web application, verification gateway, and peer discussion portals are scheduled for Phase 2 development.
-          </div>
-        </div>
-
-        <div class="sanctum-philosophy-card reveal-on-scroll" style="margin-top: 28px;">
-          <p>
-            ✦ <strong>Core Philosophy:</strong> "Understanding the person behind the music matters just as much as appreciating the music itself."
-          </p>
-          <div style="margin-top: 10px; font-size: 0.85rem; color: var(--color-text-muted);">
-            — DussT, Founder of The Sanctum Concept
-          </div>
-        </div>
-
-        <!-- 6 Pillars -->
-        <div class="pillars-grid" style="margin: 40px 0;">
-          <div class="pillar-card">
-            <span class="pillar-num">01 // INTEGRITY</span>
-            <h3 class="pillar-title">Artist-Only Verified Publishing</h3>
-            <p class="pillar-text">Only registered and verified musicians can publish tracks and creative stories, eliminating bot spam.</p>
-          </div>
-          <div class="pillar-card">
-            <span class="pillar-num">02 // EMPATHY</span>
-            <h3 class="pillar-title">Mental Health Awareness</h3>
-            <p class="pillar-text">Listeners look beyond catchy hooks to recognize and support the real human challenges beneath the tracks.</p>
-          </div>
-          <div class="pillar-card">
-            <span class="pillar-num">03 // AUTONOMY</span>
-            <h3 class="pillar-title">Expression Without Pressure</h3>
-            <p class="pillar-text">Artists are free to channel intense personal experiences without being forced to explain every lyric.</p>
-          </div>
-          <div class="pillar-card">
-            <span class="pillar-num">04 // DISCOVERY</span>
-            <h3 class="pillar-title">Merit Over Metrics</h3>
-            <p class="pillar-text">Emerging talent receives equal discovery opportunities regardless of budget or follower counts.</p>
-          </div>
-          <div class="pillar-card">
-            <span class="pillar-num">05 // SAFETY</span>
-            <h3 class="pillar-title">Moderated Safe Harbor</h3>
-            <p class="pillar-text">Strict privacy safeguards and anti-harassment protocols protect vulnerable creative voices.</p>
-          </div>
-          <div class="pillar-card">
-            <span class="pillar-num">06 // LEGACY</span>
-            <h3 class="pillar-title">Beyond A Single Artist</h3>
-            <p class="pillar-text">An enduring movement where creative voices across disciplines support one another worldwide.</p>
-          </div>
-        </div>
-
-        <!-- Waitlist Form -->
-        <div class="sanctum-enrollment-box">
-          <div class="section-tag">// BETA ENROLLMENT</div>
-          <h3 style="font-family: var(--font-gothic); font-size: 1.8rem; color: var(--color-text-ivory); margin-bottom: 12px;">
-            Join The Founding Waitlist
-          </h3>
-          <p style="font-size: 0.92rem; color: var(--color-text-cream); margin-bottom: 24px;">
-            Submit your expression of interest below to join the initial cohort of artists and empathetic listeners.
-          </p>
-
-          <form id="sanctumWaitlistForm" novalidate>
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div class="form-group">
-                <label for="fullName" class="form-label">Full Name or Artist Pseudonym *</label>
-                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. DussT / Knucklewalka" required>
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email Address *</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="you@domain.com" required>
-              </div>
+        <div class="new-music-grid">
+          <!-- Logo 1: Alembic Sigil -->
+          <article class="new-music-card">
+            <div class="new-music-art" style="padding: 1.5rem; display: grid; place-items: center; background: #060606;">
+              <img alt="DussT Alembic Sigil with Dagger, Snake, and Botanical Filigree" src="assets/images/dusst-logo-concept-alembic.png" style="max-height: 220px; width: auto; object-fit: contain;">
             </div>
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div class="form-group">
-                <label for="role" class="form-label">Primary Role *</label>
-                <select id="role" name="role" class="form-select" required>
-                  <option value="Independent Music Artist">Independent Music Artist (Applying for Verification)</option>
-                  <option value="Empathetic Listener">Empathetic Listener (Discover &amp; Support)</option>
-                  <option value="Visual Artist / Animator">Visual Artist / Animator (Creative Collaborator)</option>
-                  <option value="Audio Engineer / Producer">Audio Engineer / Music Producer</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="genre" class="form-label">Primary Genre / Artistic Discipline</label>
-                <input type="text" id="genre" name="genre" class="form-input" placeholder="e.g. Underground Rap, Dark Alternative">
-              </div>
+            <div class="new-music-meta">
+              <span>01 / EMBLEM</span>
+              <span class="status-tag">PRIMARY</span>
             </div>
-            <div class="form-group">
-              <label for="notes" class="form-label">What Does The Sanctum Mean To You? (Optional)</label>
-              <textarea id="notes" name="notes" class="form-textarea" rows="2" placeholder="Share your perspective on music, mental health, or community..."></textarea>
+            <h3>ALEMBIC SIGIL</h3>
+            <p style="color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem;">
+              The central dagger, serpent, and thorny botanical elements in antique distressed ivory.
+            </p>
+            <div class="stream-links">
+              <a href="assets/images/dusst-logo-concept-alembic.png" download>
+                PNG ASSET <span>↓</span>
+              </a>
+              <a href="assets/logos/dusst-logo-concept-2-sigil.svg" download>
+                SVG VECTOR <span>↓</span>
+              </a>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-              ✦ SUBMIT EXPRESSION OF INTEREST
+          </article>
+
+          <!-- Logo 2: Gothic Wordmark -->
+          <article class="new-music-card">
+            <div class="new-music-art" style="padding: 1.5rem; display: grid; place-items: center; background: #060606;">
+              <img alt="DussT Gothic Wordmark Vector" src="assets/logos/dusst-logo-concept-1-wordmark.svg" style="max-height: 200px; width: auto; object-fit: contain;">
+            </div>
+            <div class="new-music-meta">
+              <span>02 / WORDMARK</span>
+              <span class="status-tag">DISPLAY</span>
+            </div>
+            <h3>GOTHIC WORDMARK</h3>
+            <p style="color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem;">
+              Sharp blackletter calligraphy engineered for merchandise, vinyl sleeves, and stage backdrops.
+            </p>
+            <div class="stream-links">
+              <a href="assets/logos/dusst-logo-concept-1-wordmark.svg" download>
+                SVG VECTOR <span>↓</span>
+              </a>
+              <a href="#contact">
+                CUSTOM CUT <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Logo 3: Monogram -->
+          <article class="new-music-card">
+            <div class="new-music-art" style="padding: 1.5rem; display: grid; place-items: center; background: #060606;">
+              <img alt="DussT Character Monogram" src="assets/logos/dusst-logo-concept-3-monogram.svg" style="max-height: 200px; width: auto; object-fit: contain;">
+            </div>
+            <div class="new-music-meta">
+              <span>03 / MONOGRAM</span>
+              <span class="status-tag">MINIMAL</span>
+            </div>
+            <h3>SHADOW MONOGRAM</h3>
+            <p style="color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem;">
+              Minimalist stamp combining 'D' and 'T' with a concealed dagger silhouette for social badges and favicons.
+            </p>
+            <div class="stream-links">
+              <a href="assets/logos/dusst-logo-concept-3-monogram.svg" download>
+                SVG VECTOR <span>↓</span>
+              </a>
+              <a href="#contact">
+                SPEC SHEET <span>↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT DUSST (KLEIN 2-COLUMN EDITORIAL) -->
+    <section aria-labelledby="about-title" class="section about-section v7-home-about" id="about">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2 id="about-title">
+            ABOUT<span class="punctuation">.</span>
+          </h2>
+          <a class="section-header-link" href="about.html">
+            FULL BIOGRAPHY <span>↗</span>
+          </a>
+        </div>
+
+        <div class="about-editorial">
+          <div class="about-image">
+            <img alt="Editorial portrait of DussT in Shadow Ronin attire" decoding="async" height="1448" width="1086" loading="lazy" src="assets/images/dusst-shadow-ronin.png">
+            <span class="image-notation">
+              DUSST / SHADOW RONIN ARTIST PROFILE
+            </span>
+          </div>
+
+          <div class="about-statement">
+            <p class="about-lead">
+              UNDERGROUND ROOTS.<br>
+              <span>SHADOW RONIN</span> DISCIPLINE.
+            </p>
+            <p>
+              DussT is an independent underground recording artist forging a distinct sonic realm where dark gothic soundscapes, cinematic anime lore, and uncompromised lyricism collide.
+            </p>
+            <p>
+              Built upon the personal creative philosophy <em>"Don't kick the Duss Up"</em>, his music balances quiet discipline with explosive sonic energy. Through character alter-egos like the masked Shadow Ronin and the grounded Casual Avatar, DussT transforms personal adversity into high-concept art.
+            </p>
+            <p>
+              Beyond the booth, DussT is the visionary behind <strong>The Sanctum</strong> — an upcoming global refuge designed to destigmatize mental health in music and unite vulnerable creators worldwide.
+            </p>
+
+            <a class="text-arrow" href="#sanctum">
+              DISCOVER THE SANCTUM <span>↗</span>
+            </a>
+
+            <div class="about-stats">
+              <span>
+                ACTIVE SINCE
+                <strong>2026</strong>
+              </span>
+              <span>
+                ORIGIN
+                <strong>UNDERGROUND</strong>
+              </span>
+              <span>
+                PHILOSOPHY
+                <strong>DON'T KICK DUSS UP</strong>
+              </span>
+              <span>
+                COMMUNITY
+                <strong>THE SANCTUM</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: THE SANCTUM (COMMUNITY MANIFESTO & WAITLIST) -->
+    <section aria-labelledby="sanctum-title" class="section sanctum-section v7-home-sanctum" id="sanctum">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2 id="sanctum-title">
+            THE SANCTUM<span class="punctuation">.</span>
+          </h2>
+          <a class="section-header-link" href="sanctum.html">
+            FULL ROADMAP <span>↗</span>
+          </a>
+        </div>
+        <p class="section-motto">"Where artists find their voice, and the world learns to listen."</p>
+
+        <!-- 6 Pillars Grid -->
+        <div class="sanctum-pillars-grid">
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">01</span>
+            <h3>MENTAL HEALTH PRIORITY</h3>
+            <p>A safe space created specifically to address isolation, depression, and creative burnout among underground artists.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">02</span>
+            <h3>VERIFIED ARTIST AUTONOMY</h3>
+            <p>A curated portal where independent musicians publish original works and retain 100% intellectual control.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">03</span>
+            <h3>EMPATHETIC LISTENER DISCOVERY</h3>
+            <p>Listeners connect with the human story and emotional weight behind each composition, not algorithmic metrics.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">04</span>
+            <h3>EMOTIONAL FREEDOM</h3>
+            <p>Artists express raw pain and triumphant moments without being obligated to explain every lyric to the public.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">05</span>
+            <h3>MODERATED SAFETY</h3>
+            <p>Zero toxicity, zero harassment. Protected private channels and robust community oversight ensure safety.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">06</span>
+            <h3>DEMOCRATIC PLATFORM</h3>
+            <p>Discovery rooted in artistic sincerity, granting emerging creators equal visibility regardless of social follower counts.</p>
+          </div>
+        </div>
+
+        <!-- Pre-Launch Waitlist Action Box -->
+        <div class="sanctum-waitlist-box">
+          <div class="sanctum-waitlist-header">
+            <div>
+              <span class="release-promo-eyebrow">COMMUNITY PRE-LAUNCH / PHASE 1</span>
+              <h3>JOIN THE SANCTUM WAITLIST</h3>
+            </div>
+            <span style="font-size: 0.8rem; color: var(--gold); font-family: var(--mono);">OFFICIAL EXPRESSION OF INTEREST</span>
+          </div>
+
+          <form id="sanctumWaitlistForm" class="waitlist-form-grid">
+            <input type="text" class="form-input" placeholder="YOUR NAME / ARTIST HANDLE" required>
+            <input type="email" class="form-input" placeholder="EMAIL ADDRESS" required>
+            <select class="form-input form-select" required>
+              <option value="" disabled selected>YOUR ROLE IN THE SANCTUM</option>
+              <option value="Artist">Independent Recording Artist</option>
+              <option value="Listener">Empathetic Listener &amp; Supporter</option>
+              <option value="Collaborator">Visual Artist / Producer</option>
+            </select>
+            <button type="submit" class="button button--solid">
+              REGISTER INTEREST <span>↗</span>
             </button>
-            <div id="sanctumStatusMsg" class="form-feedback-box" style="display: none; margin-top: 18px;"></div>
           </form>
+          <div id="waitlistStatus" style="display: none; margin-top: 1rem; font-size: 0.84rem;"></div>
         </div>
       </div>
     </section>
 
-    <!-- 8. CREATOR & COLLABORATOR SPOTLIGHT (Quady Oseni / OQ — ONLY Email Shown, No Instagram) -->
-    <section id="creator" class="section" style="background: rgba(14, 15, 23, 0.6);" aria-label="Creative Collaborator">
-      <div class="container">
-        <div class="creator-showcase" style="border-color: var(--border-gold);">
-          <div class="creator-avatar-frame">
-            <img src="assets/images/dusst-shadow-ronin-bust.png" alt="Character visual designed by Quady Oseni">
-            <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(5, 5, 7, 0.9); border: 1px solid var(--color-gold); padding: 4px 12px; border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-gold);">
-              ✦ QUADY ANIMATION STUDIO
-            </div>
-          </div>
-          <div>
-            <div class="section-tag">// WEBSITE &amp; VISUALS BY OQ</div>
-            <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 8px;">
-              QUADY OSENI <span class="text-gold">(OQ)</span>
-            </h2>
-            <p style="font-family: var(--font-serif-clean); font-size: 0.95rem; color: var(--color-gold); letter-spacing: 0.1em; margin-bottom: 16px;">
-              Freelance 2D/3D Animator, Music Video Visualizer Director &amp; Web Architect
-            </p>
-            <div style="font-size: 0.92rem; line-height: 1.75; color: var(--color-text-cream); display: flex; flex-direction: column; gap: 12px;">
-              <p>
-                Quady Oseni (known professionally as <strong>OQ</strong>) partnered directly with recording artist DussT to translate his sonic narratives into concrete visual mythos. From sculpting the 3D model turnaround sheets for <em>The Shadow Ronin</em> to animating the master visualizer for <em>FREEVXRSE</em> and engineering this unified web portal, their partnership reflects genuine underground creative brotherhood.
-              </p>
-            </div>
-            <div class="creator-disciplines-list" style="margin: 16px 0 20px 0;">
-              <span class="discipline-badge">3D Character Modeling</span>
-              <span class="discipline-badge">Music-Driven Video Visualizers</span>
-              <span class="discipline-badge">Gothic Brand Identity &amp; Logo Suite</span>
-              <span class="discipline-badge">Full-Stack Web Architecture</span>
-            </div>
-            
-            <!-- Contact: ONLY Email Shown as Requested -->
-            <div style="padding: 14px 18px; background: rgba(8, 9, 13, 0.85); border: 1px solid var(--border-gold); border-radius: var(--radius-sm); display: inline-flex; flex-direction: column; gap: 4px;">
-              <span style="font-size: 0.72rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
-                Animator Direct Contact:
-              </span>
-              <a href="mailto:oseniquady53@gmail.com" style="font-family: var(--font-mono); font-size: 0.95rem; color: var(--color-gold); font-weight: 700; text-decoration: none;">
-                oseniquady53@gmail.com ✉
-              </a>
-            </div>
-          </div>
+    <!-- SECTION 6: VISUAL GALLERY -->
+    <section aria-labelledby="gallery-title" class="section gallery-section v7-home-gallery" id="gallery">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2 id="gallery-title">
+            GALLERY<span class="punctuation">.</span>
+          </h2>
+          <a class="section-header-link" href="gallery.html">
+            FULL VAULT <span>↗</span>
+          </a>
         </div>
-      </div>
-    </section>
+        <p class="section-lead">CHARACTER ARTWORK, 3D CONCEPT MODELS &amp; VISUAL ARCHIVES</p>
 
-    <!-- 9. SEPARATED ARTIST SOCIAL MEDIA HUB -->
-    <section id="social" class="section" style="background: rgba(8, 9, 13, 0.7);" aria-label="Social Media">
-      <div class="container">
-        <div class="section-tag">// 07 ARTIST NETWORK</div>
-        <h2 class="section-title">CONFIRMED <span class="text-gold">SOCIAL MEDIA CHANNELS</span></h2>
-        <p class="section-desc">
-          Official social media profiles for DussT. Separated strictly from music streaming distribution links.
-        </p>
-
-        <div class="social-hub-grid">
-          <!-- Instagram -->
-          <div class="social-card">
-            <div class="social-platform-title">
-              <span>Instagram</span>
-              <span class="social-status-tag">In Setup</span>
-            </div>
-            <div class="social-handle">@KNUCKL3WALKA</div>
-            <p style="font-size: 0.8rem; color: var(--color-text-muted);">
-              Official artist account mentioned in production conversations. Handle verification in progress.
-            </p>
+        <div class="gallery-grid">
+          <div class="gallery-item" tabindex="0">
+            <img alt="DussT Shadow Ronin Full Body Avatar" src="assets/images/dusst-shadow-ronin.png">
+            <div class="gallery-item-caption">SHADOW RONIN / FULL MODEL ↗</div>
           </div>
-
-          <!-- Discord -->
-          <div class="social-card">
-            <div class="social-platform-title">
-              <span>Discord</span>
-              <span class="social-status-tag">Creative Hub</span>
-            </div>
-            <div class="social-handle">KNUCKL3WALKA [FLND]</div>
-            <p style="font-size: 0.8rem; color: var(--color-text-muted);">
-              Direct community space where DussT and visual collaborator OQ coordinate and create.
-            </p>
+          <div class="gallery-item" tabindex="0">
+            <img alt="DussT Casual Avatar Portrait" src="assets/images/dusst-casual-avatar.png">
+            <div class="gallery-item-caption">CASUAL AVATAR / PROFILE ↗</div>
           </div>
-
-          <!-- The Sanctum -->
-          <div class="social-card">
-            <div class="social-platform-title">
-              <span>The Sanctum</span>
-              <span class="social-status-tag">Waitlist Open</span>
-            </div>
-            <div class="social-handle">EnterTheDussVxrse.com/#sanctum</div>
-            <p style="font-size: 0.8rem; color: var(--color-text-muted);">
-              DussT's dedicated worldwide community for music, mental health awareness, and empathy.
-            </p>
+          <div class="gallery-item" tabindex="0">
+            <img alt="FREEVXRSE Master Single Artwork" src="assets/images/dusst-freevxrse-art.png">
+            <div class="gallery-item-caption">FREEVXRSE / COVER ART ↗</div>
           </div>
-
-          <!-- Booking Dispatch -->
-          <div class="social-card">
-            <div class="social-platform-title">
-              <span>Booking Email</span>
-              <span class="social-status-tag">Proposed Domain</span>
-            </div>
-            <div class="social-handle">info@EnterTheDussVxrse.com</div>
-            <p style="font-size: 0.8rem; color: var(--color-text-muted);">
-              Professional mailbox to be activated upon domain purchase by the artist.
-            </p>
+          <div class="gallery-item" tabindex="0">
+            <img alt="DussT Official Alembic Emblem on Black" src="assets/images/dusst-logo-concept-alembic.png">
+            <div class="gallery-item-caption">ALEMBIC SIGIL / VECTOR ↗</div>
+          </div>
+          <div class="gallery-item" tabindex="0">
+            <img alt="Shadow Ronin Bust Character Model" src="assets/images/dusst-shadow-ronin-bust.png">
+            <div class="gallery-item-caption">RONIN BUST / 3D SCULPT ↗</div>
+          </div>
+          <div class="gallery-item" tabindex="0">
+            <img alt="Shadow Ronin Front View Model" src="assets/images/dusst-shadow-ronin-front.png">
+            <div class="gallery-item-caption">RONIN ORTHOGRAPHIC / FRONT ↗</div>
+          </div>
+          <div class="gallery-item" tabindex="0">
+            <img alt="Shadow Ronin Side View Profile" src="assets/images/dusst-shadow-ronin-side.png">
+            <div class="gallery-item-caption">RONIN PROFILE / LATERAL ↗</div>
+          </div>
+          <div class="gallery-item" tabindex="0">
+            <img alt="DussT Casual Avatar Bust Closeup" src="assets/images/dusst-casual-avatar-bust.png">
+            <div class="gallery-item-caption">CASUAL BUST / CLOSEUP ↗</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 10. CONTACT & BOOKINGS DISPATCH -->
-    <section id="contact" class="section" aria-label="Contact and Bookings">
-      <div class="container">
-        <div class="contact-grid">
-          <div>
-            <div class="contact-info-card" style="border-color: var(--border-gold);">
-              <span class="section-tag" style="margin-bottom: 6px;">OFFICIAL DISPATCH</span>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.4rem; color: var(--color-text-ivory); margin-bottom: 12px;">
-                Connect With DussT
-              </h3>
-              
-              <div class="contact-email-badge">
-                <span style="font-size: 0.72rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
-                  Proposed Professional Domain Mailbox:
-                </span>
-                <span class="contact-email-addr">info@EnterTheDussVxrse.com</span>
-                <span class="contact-email-note">
-                  ✦ Status: <strong>Pending Domain Registration</strong> by the artist. Inquiries currently routed to direct booking pipeline.
-                </span>
-              </div>
+    <!-- SECTION 7: CREATOR / COLLABORATOR (OQ) -->
+    <section aria-labelledby="creator-title" class="section creator-section v7-home-creator" id="creator">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2 id="creator-title">
+            CREATOR<span class="punctuation">.</span>
+          </h2>
+          <a class="section-header-link" href="creator.html">
+            COLLABORATOR DOSSIER <span>↗</span>
+          </a>
+        </div>
 
-              <!-- Animator Contact: ONLY Email -->
-              <div style="margin-top: 18px; padding: 14px 18px; background: rgba(8, 9, 13, 0.7); border: 1px solid var(--border-card); border-radius: var(--radius-sm);">
-                <span style="font-size: 0.72rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
-                  Creative &amp; Visuals by OQ:
-                </span>
-                <div style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--color-gold); margin-top: 4px;">
-                  oseniquady53@gmail.com
-                </div>
-              </div>
-            </div>
+        <div class="creator-editorial">
+          <div class="creator-info">
+            <span class="creator-role">LEAD ANIMATOR, 3D ARTIST &amp; WEB ARCHITECT</span>
+            <h3>QUADY OSENI (OQ)</h3>
+            <p>
+              Quady Oseni (OQ) is the visual director and lead collaborator crafting the digital identity for DussT. He conceived the 3D character turntables, visualizer sequences, collaborative brand mark system, and web architecture.
+            </p>
+            <p>
+              Specializing in dark anime-inspired animation, stylized character rigging, and responsive web design, OQ works closely with independent musicians to translate their sonic concepts into immersive visual worlds.
+            </p>
+
+            <a class="creator-contact-mail" href="mailto:oseniquady53@gmail.com?subject=Creative%20Collaboration%20Enquiry%20via%20DussT%20Website">
+              oseniquady53@gmail.com <span>↗</span>
+            </a>
           </div>
 
-          <div>
-            <div class="sanctum-enrollment-box" style="padding: 36px; border-color: var(--border-crimson);">
-              <div class="section-tag">// TRANSMIT INQUIRY</div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.6rem; color: var(--color-text-ivory); margin-bottom: 8px;">
-                Send Direct Message
-              </h3>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 20px;">
-                For live bookings, collaboration features, or press inquiries, dispatch your message below.
-              </p>
-
-              <form id="contactForm" novalidate>
-                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
-                  <div class="form-group">
-                    <label for="contactName" class="form-label">Name / Organization *</label>
-                    <input type="text" id="contactName" name="contactName" class="form-input" placeholder="Your Name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="contactEmail" class="form-label">Return Email Address *</label>
-                    <input type="email" id="contactEmail" name="contactEmail" class="form-input" placeholder="you@domain.com" required>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="subject" class="form-label">Subject / Inquiry Type *</label>
-                  <select id="subject" name="subject" class="form-select" required>
-                    <option value="Live Booking Inquiry">Live Booking / Concert Appearance</option>
-                    <option value="Collaboration / Feature Request">Music Collaboration / Feature Verse</option>
-                    <option value="Animation & Visual Inquiry (with OQ)">Animation &amp; Visuals with OQ</option>
-                    <option value="Press / Media Coverage">Press &amp; Media Coverage</option>
-                    <option value="General Inquiry">General Artist Management</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="message" class="form-label">Your Message *</label>
-                  <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Detail dates, budgets, or creative scope..." required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                  ✦ DISPATCH MESSAGE TO DUSST
-                </button>
-                <div id="contactStatusMsg" class="form-feedback-box" style="display: none; margin-top: 18px;"></div>
-              </form>
+          <div class="creator-media" style="border: 1px solid rgba(255, 255, 255, 0.16); background: #080808; padding: 1rem;">
+            <img alt="3D character turntable showcase created by Quady Oseni (OQ)" src="assets/images/dusst-shadow-ronin-front.png" style="width: 100%; max-height: 440px; object-fit: contain;">
+            <div style="font-size: 0.72rem; letter-spacing: 0.14em; color: var(--gold); text-align: center; margin-top: 10px; font-family: var(--mono); text-transform: uppercase;">
+              3D CHARACTER ASSET SPEC / OQ STUDIOS
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: BOOKING & CONTACT (KLEIN TYPOGRAPHIC LAYOUT) -->
+    <section aria-labelledby="booking-title" class="section booking-section v7-home-booking" id="contact">
+      <div class="section-inner booking-inner">
+        <h2 id="booking-title">
+          BOOK<br>
+          NOW<span class="punctuation">.</span>
+        </h2>
+
+        <div class="booking-bottom">
+          <p>
+            Artist bookings. Festival appearances. Film &amp; game scoring. Brand partnerships. Creative collaborations.<br>
+            Bring the underground sound and cinematic aesthetic to your venue or stage.<br>
+            <span class="booking-location-hint">PROPOSED DOMAIN: ENTERTHEDUSSVXRSE.COM • WORLDWIDE DISPATCH</span>
+          </p>
+
+          <a aria-label="Email DussT and Quady Oseni for bookings" class="booking-mail" href="mailto:oseniquady53@gmail.com?subject=DussT%20Booking%20%26%20Creative%20Enquiry">
+            oseniquady53@gmail.com <span>↗</span>
+          </a>
+        </div>
+
+        <div class="booking-form-box">
+          <span class="release-promo-eyebrow">DIRECT DISPATCH / OFFICIAL ROUTING</span>
+          <h3 style="font-family: var(--display); font-size: 1.8rem; color: #fff; margin: 0.5rem 0 1.5rem; text-transform: uppercase;">
+            TRANSMIT BOOKING OR INQUIRY
+          </h3>
+
+          <form id="bookingForm">
+            <div class="booking-form-grid">
+              <input type="text" class="form-input" placeholder="YOUR NAME / ORGANIZATION" required>
+              <input type="email" class="form-input" placeholder="EMAIL ADDRESS" required>
+              <select class="form-input form-select" required>
+                <option value="" disabled selected>INQUIRY TYPE</option>
+                <option value="Live Booking">Live Performance / Festival Booking</option>
+                <option value="Music Collaboration">Music Feature / Production Collaboration</option>
+                <option value="Visual Direction">Animation / Visuals (Quady Oseni)</option>
+                <option value="Sanctum Project">The Sanctum Community Partnership</option>
+                <option value="Press / Media">Press / Interview / Media</option>
+              </select>
+            </div>
+            <textarea class="booking-textarea" placeholder="DETAILS REGARDING DATES, VENUE, BUDGET, OR CREATIVE SCOPE" required></textarea>
+            <div style="margin-top: 1.2rem; display: flex; justify-content: flex-end;">
+              <button type="submit" class="button button--solid">
+                SUBMIT DISPATCH <span>↗</span>
+              </button>
+            </div>
+          </form>
+          <div id="bookingStatus" style="display: none; margin-top: 1rem; font-size: 0.85rem;"></div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- LIGHTBOX MODAL -->
-  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox">
-    <div class="lightbox-container">
-      <button id="lightboxClose" class="lightbox-close-btn" aria-label="Close Lightbox">✕</button>
-      <div class="lightbox-img-wrapper">
-        <img id="lightboxImg" src="" alt="Enlarged Artwork">
-      </div>
-      <div class="lightbox-caption">
-        <h4 id="lightboxTitle" style="color: var(--color-gold); font-family: var(--font-serif-clean); font-size: 1.1rem;"></h4>
-        <p id="lightboxCaption" style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 4px;"></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- NATIVE DIRECT VIDEO MODAL (Zero Google Drive Links) -->
-  <div id="videoModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Video Player">
-    <div class="lightbox-container" style="max-width: 940px;">
-      <button id="videoModalClose" class="lightbox-close-btn" aria-label="Close Video Player">✕</button>
-      <div style="width: 100%; aspect-ratio: 16/9; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-crimson); background: #000;">
-        <video id="modalNativeVideo" controls playsinline style="width: 100%; height: 100%; object-fit: cover;">
-          <source src="assets/videos/dusst-visualizer.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
-      <div style="margin-top: 14px; text-align: center;">
-        <h4 style="color: var(--color-gold); font-family: var(--font-serif-clean);">FREEVXRSE — Official Master Visualizer</h4>
-        <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 4px;">
-          Music by DussT • Directed &amp; Animated by Quady Oseni (OQ)
+  <!-- SITE FOOTER (KLEIN EDITORIAL DIRECTORY) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/dusst-logo-concept-alembic.png" alt="DussT Emblem" width="130" height="130">
+        <span class="footer-brand-title">ENTER THE DUSST VXRSE</span>
+        <p class="footer-brand-tagline">
+          Official artist portal for DussT. Dark gothic hip-hop, character visual lore &amp; The Sanctum community.
         </p>
       </div>
+
+      <div class="footer-navs">
+        <!-- Col 1: Navigation -->
+        <div class="footer-col">
+          <span class="footer-col-title">NAVIGATION</span>
+          <nav>
+            <a href="#releases">MUSIC <span>↗</span></a>
+            <a href="#videos">VIDEOS <span>↗</span></a>
+            <a href="#brand-identity">IDENTITY <span>↗</span></a>
+            <a href="#about">ABOUT <span>↗</span></a>
+            <a href="#sanctum">THE SANCTUM <span>↗</span></a>
+            <a href="#gallery">GALLERY <span>↗</span></a>
+            <a href="#creator">CREATOR <span>↗</span></a>
+            <a href="#contact">BOOK NOW <span>↗</span></a>
+          </nav>
+        </div>
+
+        <!-- Col 2: Streaming DSPs -->
+        <div class="footer-col">
+          <span class="footer-col-title">STREAMING &amp; DSPs</span>
+          <nav>
+            <a href="https://open.spotify.com" target="_blank" rel="noopener">SPOTIFY <span>↗</span></a>
+            <a href="https://soundcloud.com" target="_blank" rel="noopener">SOUNDCLOUD <span>↗</span></a>
+            <a href="https://music.apple.com" target="_blank" rel="noopener">APPLE MUSIC <span>↗</span></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YOUTUBE <span>↗</span></a>
+          </nav>
+        </div>
+
+        <!-- Col 3: Confirmed Socials -->
+        <div class="footer-col">
+          <span class="footer-col-title">CONFIRMED SOCIALS</span>
+          <nav>
+            <a href="https://instagram.com" target="_blank" rel="noopener">DUSST INSTAGRAM <span>↗</span></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener">DUSST TIKTOK <span>↗</span></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">DUSST X / TWITTER <span>↗</span></a>
+            <a href="https://discord.com" target="_blank" rel="noopener">THE SANCTUM DISCORD <span>↗</span></a>
+          </nav>
+        </div>
+
+        <!-- Col 4: Contact & Creator -->
+        <div class="footer-col">
+          <span class="footer-col-title">COMMUNICATIONS</span>
+          <nav>
+            <a href="mailto:oseniquady53@gmail.com">oseniquady53@gmail.com <span>↗</span></a>
+            <span style="font-size: 0.72rem; color: var(--gold); font-family: var(--mono); margin-top: 4px;">
+              PROPOSED: EnterTheDussVxrse.com
+            </span>
+            <span style="font-size: 0.72rem; color: var(--muted); margin-top: 2px;">
+              CREATOR: QUADY OSENI / OQ
+            </span>
+          </nav>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- SITE FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <img src="assets/images/dusst-logo-concept-alembic.png" alt="Official DussT Logo" style="width: 32px; height: 32px; object-fit: contain;">
-            <span style="font-family: var(--font-gothic); font-size: 1.35rem; letter-spacing: 0.1em; color: var(--color-text-ivory);">DussT</span>
-          </div>
-          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6;">
-            The official portal of recording artist DussT. Dark underground sound, character lore, brand identity suite, and The Sanctum community.
-          </p>
-        </div>
-
-        <div class="footer-nav">
-          <div>
-            <div class="footer-col-title">Navigation</div>
-            <ul class="footer-links-list">
-              <li><a href="#hero">Portal Home</a></li>
-              <li><a href="#music">Music &amp; Releases</a></li>
-              <li><a href="#videos">Official Videos</a></li>
-              <li><a href="#brand-identity">Brand Identity Suite</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="footer-col-title">Universe &amp; Vision</div>
-            <ul class="footer-links-list">
-              <li><a href="#about">About DussT</a></li>
-              <li><a href="#gallery">Visual Vault</a></li>
-              <li><a href="#sanctum">The Sanctum</a></li>
-              <li><a href="#contact">Contact &amp; Bookings</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="footer-col-title">Creative Collaborator</div>
-            <ul class="footer-links-list">
-              <li><span style="color: var(--color-text-cream); font-size: 0.88rem;">Quady Oseni (OQ)</span></li>
-              <li><a href="mailto:oseniquady53@gmail.com" style="color: var(--color-gold); font-family: var(--font-mono); font-size: 0.8rem;">oseniquady53@gmail.com</a></li>
-              <li><span style="color: var(--color-text-dim); font-size: 0.75rem;">3D Character &amp; Web Architect</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          &copy; <span id="currentYear">2026</span> DussT. All rights reserved. "Don't kick the Duss Up."
-        </div>
-        <div>
-          Website, 3D character visuals &amp; visualizer by <a href="#creator" style="color: var(--color-gold); font-weight: 600;">Quady Oseni (OQ)</a>.
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <span>© 2026 DUSST. ALL RIGHTS RESERVED.</span>
+      <p>
+        WEBSITE &amp; VISUAL IDENTITY BY QUADY OSENI (OQ) • PROPOSED DOMAIN: ENTERTHEDUSSVXRSE.COM
+      </p>
+      <a href="#top">BACK TO TOP ↑</a>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/content-config.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/audio-player.js"></script>
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Visual Vault Lightbox">
+    <button class="modal-close-btn" aria-label="Close Lightbox">✕</button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged Visual Preview">
+    </div>
+  </div>
+
+  <!-- EDITORIAL MOTION SCRIPT -->
+  <script src="js/editorial-motion.js"></script>
 </body>
 </html>

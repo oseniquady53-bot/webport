@@ -3,344 +3,235 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music & Discography — DussT | Enter The Duss Vxrse</title>
+  <title>Music & Discography | DussT | Enter The Duss Vxrse</title>
   
-  <meta name="description" content="Official discography of underground artist DussT. Stream lead single FREEVXRSE, watch official visualizers by OQ, and preview upcoming cuts.">
-  <meta name="keywords" content="DussT music, FREEVXRSE, Brand New Day, Duss Vxrse discography, underground hip-hop, Quady Oseni visualizer">
+  <meta name="description" content="Official discography of underground artist DussT. Stream lead single FREEVXRSE, watch official visualizers by OQ, and preview upcoming studio tracks.">
+  <meta name="keywords" content="DussT music, FREEVXRSE, Shadow Ronin, Casual Vxrse, underground hip-hop, gothic rap, Quady Oseni visualizer">
   <meta name="author" content="DussT & Quady Oseni (OQ)">
   
   <meta property="og:type" content="music.playlist">
-  <meta property="og:title" content="Music & Discography — DussT">
+  <meta property="og:title" content="Music & Discography | DussT">
   <meta property="og:description" content="Explore releases, visualizers, and upcoming studio singles from recording artist DussT.">
   <meta property="og:image" content="assets/images/dusst-freevxrse-art.png">
   <meta property="og:url" content="https://enterthedussvxrse.com/music.html">
 
   <link rel="icon" type="image/svg+xml" href="assets/logos/dusst-logo-concept-3-monogram.svg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
 </head>
-<body class="page-music">
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <canvas id="dusstCanvas" aria-hidden="true"></canvas>
+<body class="editorial-v7 music-page">
+  <a href="#main" class="visually-hidden">Skip to main content</a>
 
-  <!-- Site Header -->
+  <!-- SITE HEADER -->
   <header class="site-header" role="banner">
-    <div class="container nav-container">
-      <a href="index.html" class="brand-wrapper" aria-label="DussT Home">
-        <div class="brand-icon">
-          <img src="assets/images/dusst-logo-concept-alembic.png" alt="Official DussT Logo">
-        </div>
-        <div>
-          <span class="brand-title">DussT</span>
-          <span class="brand-sub">The Duss Vxrse</span>
-        </div>
-      </a>
-
-      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Main Navigation">
-        <a href="index.html">Home</a>
-        <a href="music.html" class="active">Music &amp; Releases</a>
-        <a href="index.html#videos">Videos</a>
-        <a href="index.html#brand-identity">Brand Identity</a>
-        <a href="about.html">About DussT</a>
-        <a href="gallery.html">Visual Vault</a>
-        <a href="sanctum.html">The Sanctum</a>
-        <a href="creator.html">Visuals by OQ</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <div class="nav-controls">
-        <button id="modeToggleBtn" class="mode-toggle-btn" aria-label="Toggle motion or static mode" title="Switch experience mode">
-          <span class="mode-toggle-indicator"></span>
-          <span id="modeToggleText">MOTION</span>
-        </button>
-        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
-          ☰
-        </button>
+    <a aria-label="DussT | back to home" class="brand-wordmark" href="index.html">
+      <img alt="DussT Alembic Sigil" class="header-vector-logo" height="38" width="38" src="assets/images/dusst-logo-concept-alembic.png">
+      <div>
+        <span class="brand-title-text">DUSST</span>
+        <span class="brand-title-sub">THE DUSS VXRSE</span>
       </div>
-    </div>
+    </a>
+
+    <nav aria-label="Primary" class="desktop-nav">
+      <a href="music.html" aria-current="true">MUSIC</a>
+      <a href="index.html#videos">VIDEOS</a>
+      <a href="index.html#brand-identity">IDENTITY</a>
+      <a href="about.html">ABOUT</a>
+      <a href="sanctum.html">THE SANCTUM</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="creator.html">CREATOR</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <a class="header-cta" href="contact.html">
+      BOOK NOW <span>↗</span>
+    </a>
+
+    <button aria-controls="mobile-menu" aria-expanded="false" class="menu-toggle" type="button">
+      Menu
+    </button>
   </header>
 
-  <main id="main-content" class="main-content" style="padding-top: calc(var(--nav-height) + 40px);">
-    
-    <!-- PAGE HEADER -->
-    <section class="section" style="padding-bottom: 24px;">
-      <div class="container">
-        <div class="section-tag">// 01 DISCOGRAPHY &amp; SOUNDSCAPES</div>
-        <h1 class="section-title">THE SONIC <span class="text-crimson">ARCHIVE</span></h1>
-        <p class="section-desc">
-          Official recordings, master visualizers, and upcoming studio sessions from recording artist DussT.
-        </p>
-
-        <!-- Audio Player Status HUD -->
-        <div class="audio-player-bar" style="margin-top: 32px;">
-          <div class="player-controls">
-            <button id="playerPlayBtn" class="play-toggle-btn" aria-label="Audio player information">
-              <span id="playerPlayIcon">▶</span>
-            </button>
-          </div>
-          <div class="player-track-info">
-            <div id="playerTrackTitle" class="player-track-name">FREEVXRSE (Official Single)</div>
-            <div id="playerTimeDisplay" class="player-track-time">Studio Master • Releasing Soon</div>
-          </div>
-          <div class="player-timeline-wrapper">
-            <div id="playerTimeline" class="timeline-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-              <div id="playerTimelineFill" class="timeline-fill"></div>
-            </div>
-          </div>
-          <div class="waveform-indicator" aria-hidden="true" style="display: flex; gap: 3px; align-items: flex-end; height: 18px;">
-            <span class="waveform-anim-bar"></span>
-            <span class="waveform-anim-bar"></span>
-            <span class="waveform-anim-bar"></span>
-            <span class="waveform-anim-bar"></span>
-            <span class="waveform-anim-bar"></span>
-          </div>
-        </div>
-        <audio id="mainAudio" preload="none"></audio>
-      </div>
-    </section>
-
-    <!-- SECTION 1: LEAD SINGLE WITH NATIVE VIDEO PLAYER -->
-    <section class="section" style="padding-top: 10px;">
-      <div class="container">
-        <div class="release-featured-card">
-          <div class="release-art-wrapper">
-            <img src="assets/images/dusst-freevxrse-art.png" alt="FREEVXRSE cover art">
-            <span class="release-status-badge">CURRENT SINGLE</span>
-          </div>
-
-          <div class="release-details">
-            <div class="release-meta">
-              <span>✦ OFFICIAL SINGLE</span> • <span>VISUALS BY OQ</span> • <span class="text-gold">MASTER CUT</span>
-            </div>
-            <h3>FREEVXRSE</h3>
-            <p class="release-desc">
-              Illustrated in stark, graphic-novel black and white, FREEVXRSE places DussT at a speaker’s podium above a shadowy congregation holding forth their hearts, brains, and lungs in profound sacrifice. The track embodies the pain of feeling commodified by modern culture, calling instead for radical creative freedom.
-            </p>
-
-            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px;">
-              <button 
-                class="btn btn-primary" 
-                data-open-visualizer 
-                data-video-url="assets/videos/dusst-visualizer.mp4"
-              >
-                ▶ WATCH ON-SITE VISUALIZER
-              </button>
-              <button 
-                class="btn btn-outline" 
-                data-play-track 
-                data-track-name="FREEVXRSE (Single)"
-              >
-                ♫ AUDIO DISPATCH
-              </button>
-            </div>
-
-            <!-- Streaming Platforms Status -->
-            <div class="streaming-buttons">
-              <span class="stream-btn disabled" title="Spotify link will be connected once the artist completes digital distribution">
-                🎧 Spotify (Setup In Progress)
-              </span>
-              <span class="stream-btn disabled" title="Apple Music link pending upload">
-                🍎 Apple Music (Setup In Progress)
-              </span>
-              <span class="stream-btn disabled" title="SoundCloud link pending upload">
-                ☁️ SoundCloud (Upload Pipeline)
-              </span>
-              <span class="stream-btn" style="border-color: var(--color-gold); color: var(--color-gold);">
-                🎬 On-Site Master Stream
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Native On-Site Video Stream Frame -->
-        <div style="margin-top: 40px; background: var(--color-bg-card); border: 1px solid var(--border-crimson); border-radius: var(--radius-lg); padding: 28px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
-            <div>
-              <span class="section-tag" style="margin-bottom: 4px;">IN-BROWSER STREAMING</span>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.5rem; color: var(--color-text-ivory);">
-                FREEVXRSE Video Visualizer Stream
-              </h3>
-            </div>
-            <span class="stream-btn" style="font-size: 0.78rem; border-color: var(--color-gold); color: var(--color-gold);">
-              ✦ Direct 1080p Master Stream
-            </span>
-          </div>
-
-          <div class="cinematic-video-frame">
-            <video controls playsinline preload="metadata" poster="assets/images/dusst-freevxrse-art.png">
-              <source src="assets/videos/dusst-visualizer.mp4" type="video/mp4">
-              Your browser does not support HTML5 video.
-            </video>
-          </div>
-          <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 12px; text-align: center;">
-            ✦ Visual directed &amp; animated by Quady Oseni (OQ) • Sound master by DussT
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: HORIZONTAL RELEASES CAROUSEL -->
-    <section class="section" style="background: rgba(12, 13, 18, 0.7);">
-      <div class="container">
-        <div class="carousel-section-header">
-          <div>
-            <div class="section-tag">HORIZONTAL DISCOGRAPHY VAULT</div>
-            <h2 class="section-title">ALL STUDIO <span class="text-gold">CUTS &amp; PROJECTS</span></h2>
-            <p class="section-desc">
-              Swipe horizontally or use arrows to explore all releases and upcoming productions.
-            </p>
-          </div>
-          <div class="carousel-header-controls">
-            <button class="carousel-arrow-btn prev-btn" data-carousel-prev="musicPageCarousel" aria-label="Previous">⟨</button>
-            <button class="carousel-arrow-btn next-btn" data-carousel-next="musicPageCarousel" aria-label="Next">⟩</button>
-          </div>
-        </div>
-
-        <div class="horizontal-carousel-wrapper" data-carousel-id="musicPageCarousel">
-          <div class="horizontal-carousel-track" id="musicPageCarousel">
-            
-            <!-- Item 1 -->
-            <div class="carousel-card">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-freevxrse-art.png" alt="FREEVXRSE">
-                <span class="release-status-badge">RELEASED</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.4rem; color: var(--color-text-ivory); margin-bottom: 6px;">FREEVXRSE</h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1;">
-                Lead underground cut featuring the crowd at the altar of truth before the all-seeing eye.
-              </p>
-              <button class="btn btn-primary btn-sm" data-open-visualizer data-video-url="assets/videos/dusst-visualizer.mp4">
-                ▶ WATCH VIDEO
-              </button>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="carousel-card" style="border-color: var(--border-gold);">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-casual-avatar-front.png" alt="Brand New Day">
-                <span class="release-status-badge" style="border-color: var(--color-gold); color: var(--color-gold);">IN PRODUCTION</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.4rem; color: var(--color-text-ivory); margin-bottom: 6px;">Brand New Day</h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1;">
-                DussT &amp; OQ in studio arrangement: configuring tempo transition points and animated sequences.
-              </p>
-              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-gold);">
-                ✦ Status: Demo Recorded • Transitions in Arrangement
-              </div>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="carousel-card" style="border-color: var(--border-crimson);">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-logo-concept-alembic.png" alt="Don't Kick The Duss Up EP">
-                <span class="release-status-badge" style="border-color: var(--color-crimson); color: #ff9da6;">CONCEPT EP</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.4rem; color: var(--color-text-ivory); margin-bottom: 6px;">Don't Kick The Duss Up</h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1;">
-                Flagship multi-track project encapsulating the alchemical genesis of the Duss Vxrse.
-              </p>
-              <a href="sanctum.html" class="btn btn-outline btn-sm">JOIN SANCTUM PRE-SAVE →</a>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="carousel-card">
-              <div class="release-art-wrapper" style="aspect-ratio: 1; margin-bottom: 16px;">
-                <img src="assets/images/dusst-shadow-ronin-front.png" alt="The Dust Rises">
-                <span class="release-status-badge">STUDIO VAULT</span>
-              </div>
-              <h3 style="font-family: var(--font-gothic); font-size: 1.4rem; color: var(--color-text-ivory); margin-bottom: 6px;">The Dust Rises</h3>
-              <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1;">
-                Underground vocal stems and gothic textures from the initial character formulation sessions.
-              </p>
-              <span class="stream-btn disabled" style="font-size: 0.75rem;">🔒 Studio Vault</span>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Video Modal -->
-  <div id="videoModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Video Player">
-    <div class="lightbox-container" style="max-width: 900px;">
-      <button id="videoModalClose" class="lightbox-close-btn" aria-label="Close">✕</button>
-      <div style="width: 100%; aspect-ratio: 16/9; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-crimson); background: #000;">
-        <video id="modalNativeVideo" controls playsinline style="width: 100%; height: 100%; object-fit: cover;">
-          <source src="assets/videos/dusst-visualizer.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div style="margin-top: 14px; text-align: center;">
-        <h4 style="color: var(--color-gold); font-family: var(--font-serif-clean);">FREEVXRSE — Official Master Visualizer</h4>
-        <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 4px;">
-          Music by DussT • Directed &amp; Animated by Quady Oseni (OQ)
-        </p>
-      </div>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile Navigation">
+      <a href="index.html">HOME <span>↗</span></a>
+      <a href="music.html">MUSIC <span>↗</span></a>
+      <a href="index.html#videos">VIDEOS <span>↗</span></a>
+      <a href="index.html#brand-identity">IDENTITY <span>↗</span></a>
+      <a href="about.html">ABOUT <span>↗</span></a>
+      <a href="sanctum.html">THE SANCTUM <span>↗</span></a>
+      <a href="gallery.html">GALLERY <span>↗</span></a>
+      <a href="creator.html">CREATOR <span>↗</span></a>
+      <a href="contact.html">BOOK NOW <span>↗</span></a>
+    </nav>
+    <div class="mobile-menu-meta">
+      <span>DUSST OFFICIAL</span>
+      <a href="mailto:oseniquady53@gmail.com">oseniquady53@gmail.com ↗</a>
     </div>
   </div>
 
-  <!-- Site Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <img src="assets/images/dusst-logo-concept-alembic.png" alt="Official DussT Logo" style="width: 32px; height: 32px; object-fit: contain;">
-            <span style="font-family: var(--font-gothic); font-size: 1.35rem; letter-spacing: 0.1em; color: var(--color-text-ivory);">DussT</span>
-          </div>
-          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6;">
-            The official portal of recording artist DussT. Dark underground sound, character lore, brand identity suite, and The Sanctum community.
-          </p>
+  <main id="main">
+    <section class="section" style="padding-top: calc(var(--header-height) + clamp(30px, 4vw, 60px));">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2>MUSIC<span class="punctuation">.</span></h2>
+          <span class="section-lead">COMPLETE CATALOG, UNRELEASED SESSIONS &amp; VISUALIZER REELS</span>
         </div>
 
-        <div class="footer-nav">
-          <div>
-            <div class="footer-col-title">Navigation</div>
-            <ul class="footer-links-list">
-              <li><a href="index.html">Portal Home</a></li>
-              <li><a href="music.html">Music &amp; Releases</a></li>
-              <li><a href="about.html">About DussT</a></li>
-              <li><a href="sanctum.html">The Sanctum</a></li>
-            </ul>
+        <div class="new-music-grid">
+          <!-- Release 01 -->
+          <article class="new-music-card">
+            <div class="new-music-art">
+              <img alt="FREEVXRSE Cover Artwork" decoding="async" height="640" width="640" src="assets/images/dusst-freevxrse-art.png">
+            </div>
+            <div class="new-music-meta">
+              <span>01 / DUSST</span>
+              <span class="status-tag">OUT NOW</span>
+            </div>
+            <h3>FREEVXRSE</h3>
+            <div class="stream-links">
+              <a href="https://open.spotify.com" target="_blank" rel="noopener">SPOTIFY <span>↗</span></a>
+              <a href="https://music.apple.com" target="_blank" rel="noopener">APPLE MUSIC <span>↗</span></a>
+              <a href="https://soundcloud.com" target="_blank" rel="noopener">SOUNDCLOUD <span>↗</span></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener">YOUTUBE <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- Release 02 -->
+          <article class="new-music-card">
+            <div class="new-music-art">
+              <img alt="Shadow Ronin EP Concept Art" decoding="async" height="640" width="640" src="assets/images/dusst-shadow-ronin.png">
+            </div>
+            <div class="new-music-meta">
+              <span>02 / DUSST</span>
+              <span class="status-tag">IN PRODUCTION</span>
+            </div>
+            <h3>SHADOW RONIN EP</h3>
+            <div class="stream-links">
+              <a href="https://soundcloud.com" target="_blank" rel="noopener">SOUNDCLOUD <span>↗</span></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener">YOUTUBE <span>↗</span></a>
+              <a href="sanctum.html">SANCTUM VAULT <span>↗</span></a>
+              <a href="contact.html">DSP ACCESS <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- Release 03 -->
+          <article class="new-music-card">
+            <div class="new-music-art">
+              <img alt="Casual Vxrse Demo Art" decoding="async" height="640" width="640" src="assets/images/dusst-casual-avatar.png">
+            </div>
+            <div class="new-music-meta">
+              <span>03 / DUSST</span>
+              <span class="status-tag">STUDIO DEMO</span>
+            </div>
+            <h3>CASUAL VXRSE</h3>
+            <div class="stream-links">
+              <a href="https://soundcloud.com" target="_blank" rel="noopener">SOUNDCLOUD <span>↗</span></a>
+              <a href="https://open.spotify.com" target="_blank" rel="noopener">SPOTIFY <span>↗</span></a>
+              <a href="gallery.html">ARTWORK <span>↗</span></a>
+              <a href="sanctum.html">PREVIEW <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Video Visualizer Feature -->
+        <div class="video-feature-card">
+          <div class="video-container">
+            <video controls playsinline preload="metadata" poster="assets/images/dusst-freevxrse-art.png">
+              <source src="assets/videos/dusst-visualizer.mp4" type="video/mp4">
+            </video>
           </div>
-          <div>
-            <div class="footer-col-title">Universe &amp; Lore</div>
-            <ul class="footer-links-list">
-              <li><a href="gallery.html">Visual Vault</a></li>
-              <li><a href="index.html#brand-identity">Brand Identity Suite</a></li>
-              <li><a href="creator.html">Visuals by OQ</a></li>
-              <li><a href="contact.html">Contact &amp; Bookings</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="footer-col-title">Creative Director</div>
-            <ul class="footer-links-list">
-              <li><span style="color: var(--color-text-cream); font-size: 0.88rem;">Quady Oseni (OQ)</span></li>
-              <li><a href="mailto:oseniquady53@gmail.com" style="color: var(--color-gold); font-family: var(--font-mono); font-size: 0.8rem;">oseniquady53@gmail.com</a></li>
-            </ul>
+          <div class="video-feature-info">
+            <span class="release-promo-eyebrow">OFFICIAL VISUALIZER / 1080P MASTER</span>
+            <h3>ENTER THE DUSST VXRSE</h3>
+            <p>
+              Direct on-site streaming of the official visualizer score created in collaboration with animator Quady Oseni (OQ). Featuring the Shadow Ronin avatar against dark smoke atmospherics and gothic typography.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a class="button button--solid" href="contact.html">
+                COLLABORATE WITH OQ <span>↗</span>
+              </a>
+              <a class="button" href="assets/videos/dusst-visualizer.mp4" download>
+                DOWNLOAD MASTER REEL <span>↓</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-bottom">
-        <div>
-          &copy; <span id="currentYear">2026</span> DussT. All rights reserved. "Don't kick the Duss Up."
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/dusst-logo-concept-alembic.png" alt="DussT Emblem" width="130" height="130">
+        <span class="footer-brand-title">ENTER THE DUSST VXRSE</span>
+        <p class="footer-brand-tagline">
+          Official artist portal for DussT. Dark gothic hip-hop, character visual lore &amp; The Sanctum community.
+        </p>
+      </div>
+
+      <div class="footer-navs">
+        <div class="footer-col">
+          <span class="footer-col-title">NAVIGATION</span>
+          <nav>
+            <a href="music.html">MUSIC <span>↗</span></a>
+            <a href="index.html#videos">VIDEOS <span>↗</span></a>
+            <a href="index.html#brand-identity">IDENTITY <span>↗</span></a>
+            <a href="about.html">ABOUT <span>↗</span></a>
+            <a href="sanctum.html">THE SANCTUM <span>↗</span></a>
+            <a href="gallery.html">GALLERY <span>↗</span></a>
+            <a href="creator.html">CREATOR <span>↗</span></a>
+            <a href="contact.html">BOOK NOW <span>↗</span></a>
+          </nav>
         </div>
-        <div>
-          Website, 3D character visuals &amp; visualizer by <a href="creator.html" style="color: var(--color-gold); font-weight: 600;">Quady Oseni (OQ)</a>.
+
+        <div class="footer-col">
+          <span class="footer-col-title">STREAMING &amp; DSPs</span>
+          <nav>
+            <a href="https://open.spotify.com" target="_blank" rel="noopener">SPOTIFY <span>↗</span></a>
+            <a href="https://soundcloud.com" target="_blank" rel="noopener">SOUNDCLOUD <span>↗</span></a>
+            <a href="https://music.apple.com" target="_blank" rel="noopener">APPLE MUSIC <span>↗</span></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YOUTUBE <span>↗</span></a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">CONFIRMED SOCIALS</span>
+          <nav>
+            <a href="https://instagram.com" target="_blank" rel="noopener">DUSST INSTAGRAM <span>↗</span></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener">DUSST TIKTOK <span>↗</span></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">DUSST X / TWITTER <span>↗</span></a>
+            <a href="https://discord.com" target="_blank" rel="noopener">THE SANCTUM DISCORD <span>↗</span></a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">COMMUNICATIONS</span>
+          <nav>
+            <a href="mailto:oseniquady53@gmail.com">oseniquady53@gmail.com <span>↗</span></a>
+            <span style="font-size: 0.72rem; color: var(--gold); font-family: var(--mono); margin-top: 4px;">
+              PROPOSED: EnterTheDussVxrse.com
+            </span>
+            <span style="font-size: 0.72rem; color: var(--muted); margin-top: 2px;">
+              CREATOR: QUADY OSENI / OQ
+            </span>
+          </nav>
         </div>
       </div>
     </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 DUSST. ALL RIGHTS RESERVED.</span>
+      <p>WEBSITE &amp; VISUAL IDENTITY BY QUADY OSENI (OQ) • PROPOSED DOMAIN: ENTERTHEDUSSVXRSE.COM</p>
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
   </footer>
 
-  <script src="js/content-config.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/audio-player.js"></script>
+  <script src="js/editorial-motion.js"></script>
 </body>
 </html>

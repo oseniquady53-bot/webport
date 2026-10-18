@@ -3,283 +3,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Sanctum — Community Vision & Waitlist | DussT</title>
+  <title>The Sanctum | Community Vision & Waitlist | DussT</title>
   
   <meta name="description" content="The Sanctum is a worldwide community concept founded by DussT uniting music, mental health awareness, and creative empathy. Where artists find their voice and the world learns to listen.">
   <meta name="keywords" content="The Sanctum, DussT community, mental health in music, underground artist platform, creative empathy, artist discovery, Quady Oseni">
   <meta name="author" content="DussT & Quady Oseni (OQ)">
   
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The Sanctum — Where Artists Find Their Voice">
+  <meta property="og:title" content="The Sanctum | Where Artists Find Their Voice">
   <meta property="og:description" content="A safe, supportive worldwide community concept built around music, mental health awareness, creativity, and human connection.">
   <meta property="og:image" content="assets/images/dusst-freevxrse-art.png">
   <meta property="og:url" content="https://enterthedussvxrse.com/sanctum.html">
 
   <link rel="icon" type="image/svg+xml" href="assets/logos/dusst-logo-concept-3-monogram.svg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
 </head>
-<body class="page-sanctum">
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <canvas id="dusstCanvas" aria-hidden="true"></canvas>
+<body class="editorial-v7 sanctum-page">
+  <a href="#main" class="visually-hidden">Skip to main content</a>
 
-  <!-- Site Header -->
+  <!-- SITE HEADER -->
   <header class="site-header" role="banner">
-    <div class="container nav-container">
-      <a href="index.html" class="brand-wrapper" aria-label="DussT Home">
-        <div class="brand-icon">
-          <img src="assets/images/dusst-logo-concept-alembic.png" alt="Official DussT Logo">
-        </div>
-        <div>
-          <span class="brand-title">DussT</span>
-          <span class="brand-sub">The Duss Vxrse</span>
-        </div>
-      </a>
-
-      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Main Navigation">
-        <a href="index.html">Home</a>
-        <a href="index.html#music">Music &amp; Releases</a>
-        <a href="index.html#videos">Videos</a>
-        <a href="index.html#brand-identity">Brand Identity</a>
-        <a href="about.html">About DussT</a>
-        <a href="gallery.html">Visual Vault</a>
-        <a href="sanctum.html" class="active">The Sanctum</a>
-        <a href="creator.html">Visuals by OQ</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <div class="nav-controls">
-        <button id="modeToggleBtn" class="mode-toggle-btn" aria-label="Toggle motion or static mode" title="Switch experience mode">
-          <span class="mode-toggle-indicator"></span>
-          <span id="modeToggleText">MOTION</span>
-        </button>
-        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
-          ☰
-        </button>
+    <a aria-label="DussT | back to home" class="brand-wordmark" href="index.html">
+      <img alt="DussT Alembic Sigil" class="header-vector-logo" height="38" width="38" src="assets/images/dusst-logo-concept-alembic.png">
+      <div>
+        <span class="brand-title-text">DUSST</span>
+        <span class="brand-title-sub">THE DUSS VXRSE</span>
       </div>
-    </div>
+    </a>
+
+    <nav aria-label="Primary" class="desktop-nav">
+      <a href="index.html#releases">MUSIC</a>
+      <a href="index.html#videos">VIDEOS</a>
+      <a href="index.html#brand-identity">IDENTITY</a>
+      <a href="about.html">ABOUT</a>
+      <a href="sanctum.html" aria-current="true">THE SANCTUM</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="creator.html">CREATOR</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <a class="header-cta" href="contact.html">
+      BOOK NOW <span>↗</span>
+    </a>
+
+    <button aria-controls="mobile-menu" aria-expanded="false" class="menu-toggle" type="button">
+      Menu
+    </button>
   </header>
 
-  <main id="main-content" class="main-content" style="padding-top: calc(var(--nav-height) + 40px);">
-    
-    <!-- PAGE HERO BANNER -->
-    <section class="section" style="padding-bottom: 30px;">
-      <div class="container">
-        <div class="sanctum-header">
-          <div class="section-tag">// 03 COMMUNITY MANIFESTO</div>
-          <h1 class="section-title">THE <span class="text-crimson">SANCTUM</span></h1>
-          <div class="sanctum-motto">
-            "Where artists find their voice, and the world learns to listen."
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile Navigation">
+      <a href="index.html">HOME <span>↗</span></a>
+      <a href="index.html#releases">MUSIC <span>↗</span></a>
+      <a href="index.html#videos">VIDEOS <span>↗</span></a>
+      <a href="index.html#brand-identity">IDENTITY <span>↗</span></a>
+      <a href="about.html">ABOUT <span>↗</span></a>
+      <a href="sanctum.html">THE SANCTUM <span>↗</span></a>
+      <a href="gallery.html">GALLERY <span>↗</span></a>
+      <a href="creator.html">CREATOR <span>↗</span></a>
+      <a href="contact.html">BOOK NOW <span>↗</span></a>
+    </nav>
+    <div class="mobile-menu-meta">
+      <span>DUSST OFFICIAL</span>
+      <a href="mailto:oseniquady53@gmail.com">oseniquady53@gmail.com ↗</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="section" style="padding-top: calc(var(--header-height) + clamp(30px, 4vw, 60px));">
+      <div class="section-inner">
+        <div class="editorial-heading">
+          <h2>THE SANCTUM<span class="punctuation">.</span></h2>
+          <span class="section-lead">A GLOBAL CREATIVE HAVEN FOR MENTAL HEALTH &amp; MUSIC</span>
+        </div>
+        <p class="section-motto">"Where artists find their voice, and the world learns to listen."</p>
+
+        <!-- 6 Pillars Grid -->
+        <div class="sanctum-pillars-grid">
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">01</span>
+            <h3>MENTAL HEALTH PRIORITY</h3>
+            <p>Created specifically to address creative isolation, pressure, and vulnerability. Here, the well-being of the creator is as essential as the release itself.</p>
           </div>
-          <p class="section-desc" style="margin-inline: auto;">
-            A worldwide sanctuary built around music, mental health awareness, raw creativity, and empathetic human connection. Founded by DussT as a lasting movement that transcends any single artist.
-          </p>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">02</span>
+            <h3>VERIFIED ARTIST AUTONOMY</h3>
+            <p>Only verified independent artists publish music and stories. Creators maintain full creative control, publishing on their own terms without label constraints.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">03</span>
+            <h3>EMPATHETIC LISTENER DISCOVERY</h3>
+            <p>Listeners discover raw, authentic musical works and can leave respectful encouragement without algorithmic toxicity or shallow metrics.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">04</span>
+            <h3>EMOTIONAL FREEDOM</h3>
+            <p>Artists can share personal pain, trauma, and triumph through lyrics without feeling pressured to explain every line or compromise their privacy.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">05</span>
+            <h3>MODERATED SAFETY</h3>
+            <p>Respect, privacy, and member protection are actively enforced. Strict zero-tolerance policies protect members against harassment and abuse.</p>
+          </div>
+          <div class="sanctum-pillar-card">
+            <span class="pillar-number">06</span>
+            <h3>DEMOCRATIC DISCOVERY</h3>
+            <p>Emerging underground artists receive equal visibility and platform exposure regardless of existing follower counts or streaming numbers.</p>
+          </div>
         </div>
 
-        <div class="prelaunch-banner" style="max-width: 820px; margin-inline: auto;">
-          <span class="badge-pill">PRE-LAUNCH PHASE</span>
-          <div>
-            <strong>Transparent Community Status:</strong> The Sanctum is currently in the formulation and waitlist phase. The full web application, verification gateway, and peer discussion portals are scheduled for Phase 2 development. You can register your interest below.
+        <!-- 3-Phase Roadmap -->
+        <div style="margin-top: clamp(40px, 6vw, 75px); border: 1px solid var(--line); background: var(--surface); padding: clamp(24px, 4vw, 48px);">
+          <span class="release-promo-eyebrow">DEVELOPMENT ROADMAP / HONEST DISCLOSURE</span>
+          <h3 style="font-family: var(--display); font-size: clamp(1.8rem, 3vw, 2.5rem); color: #fff; margin: 0.6rem 0 1.5rem; text-transform: uppercase;">
+            THE SANCTUM EVOLUTION
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+            <div style="border-left: 2px solid var(--crimson); padding-left: 1rem;">
+              <strong style="color: var(--white); font-family: var(--display); font-size: 1.2rem; display: block;">PHASE 1: MANIFESTO &amp; WAITLIST (CURRENT)</strong>
+              <p style="font-size: 0.85rem; color: var(--muted); margin-top: 6px;">Public introduction, gathering expressions of interest, founding creator alliance.</p>
+            </div>
+            <div style="border-left: 2px solid var(--gold); padding-left: 1rem;">
+              <strong style="color: var(--white); font-family: var(--display); font-size: 1.2rem; display: block;">PHASE 2: PRIVATE FOUNDER ALPHA</strong>
+              <p style="font-size: 0.85rem; color: var(--muted); margin-top: 6px;">Invited roster of 50 underground artists testing encrypted sound sharing &amp; community feedback.</p>
+            </div>
+            <div style="border-left: 2px solid var(--white); padding-left: 1rem;">
+              <strong style="color: var(--white); font-family: var(--display); font-size: 1.2rem; display: block;">PHASE 3: PUBLIC WEB APP &amp; DSP HUB</strong>
+              <p style="font-size: 0.85rem; color: var(--muted); margin-top: 6px;">Verified creator accounts, listener streaming portal, mutual support circles &amp; live sessions.</p>
+            </div>
           </div>
         </div>
 
-        <div class="sanctum-philosophy-card" style="margin-top: 30px;">
-          <div style="font-family: var(--font-gothic); font-size: 1.3rem; color: var(--color-gold); margin-bottom: 8px;">
-            THE FOUNDING CREED
-          </div>
-          <p style="font-size: 1.15rem; font-style: italic; color: var(--color-text-ivory);">
-            "Understanding the person behind the music matters just as much as appreciating the music itself."
-          </p>
-          <div style="margin-top: 14px; font-size: 0.85rem; color: var(--color-text-muted);">
-            — DussT, Founder of The Sanctum Concept
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- THE 6 GUIDING COMMUNITY PRINCIPLES -->
-    <section class="section" style="padding-top: 10px;">
-      <div class="container">
-        <div class="section-tag">COMMUNITY ARCHITECTURE</div>
-        <h2 class="section-title">THE SIX <span class="text-gold">PILLARS</span></h2>
-        <p class="section-desc">
-          How The Sanctum reimagines the relationship between independent musicians and attentive listeners.
-        </p>
-
-        <div class="pillars-grid" style="margin-top: 40px;">
-          <div class="pillar-card">
-            <span class="pillar-num">01 // CREATIVE SOVEREIGNTY</span>
-            <h3 class="pillar-title">Artist-Only Verified Publishing</h3>
-            <p class="pillar-text">
-              To preserve authentic artistic depth and protect community members from spam bots and commercial noise, only registered and verified musicians can publish tracks, lyrics, and creative stories.
-            </p>
-          </div>
-
-          <div class="pillar-card">
-            <span class="pillar-num">02 // EMPATHY &amp; VULNERABILITY</span>
-            <h3 class="pillar-title">Mental Health Awareness</h3>
-            <p class="pillar-text">
-              Encouraging listeners to look beyond catchy hooks and recognize when an artist is expressing deep personal struggle. Compassion and attentive listening take priority over casual consumption.
-            </p>
-          </div>
-
-          <div class="pillar-card">
-            <span class="pillar-num">03 // UNFORCED EXPRESSION</span>
-            <h3 class="pillar-title">Expression Without Pressure</h3>
-            <p class="pillar-text">
-              Artists are free to channel intense personal experiences and symbolism into their craft without being pressured or interrogated to dissect every private lyric or personal detail.
-            </p>
-          </div>
-
-          <div class="pillar-card">
-            <span class="pillar-num">04 // MERIT OVER METRICS</span>
-            <h3 class="pillar-title">Pure Artist Discovery</h3>
-            <p class="pillar-text">
-              Giving smaller, upcoming musicians genuine opportunities to be heard based purely on creative honesty, regardless of marketing budgets, follower counts, or streaming statistics.
-            </p>
-          </div>
-
-          <div class="pillar-card">
-            <span class="pillar-num">05 // SAFETY &amp; PRIVACY</span>
-            <h3 class="pillar-title">Moderated Safe Harbor</h3>
-            <p class="pillar-text">
-              Robust moderation, privacy safeguards, and anti-harassment protocols ensure that artists and listeners can connect in a respectful, supportive environment without toxicity or exploitation.
-            </p>
-          </div>
-
-          <div class="pillar-card">
-            <span class="pillar-num">06 // COLLECTIVE MOVEMENT</span>
-            <h3 class="pillar-title">Beyond A Single Artist</h3>
-            <p class="pillar-text">
-              While DussT is the visionary founder, The Sanctum is built to outgrow any single individual—creating an enduring global movement where creative voices across disciplines support one another.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTERACTIVE WAITLIST FORM -->
-    <section class="section" style="background: rgba(14, 15, 22, 0.7);">
-      <div class="container">
-        <div class="sanctum-enrollment-box">
-          <div class="section-tag">// BETA ENROLLMENT</div>
-          <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 12px;">
-            JOIN THE <span class="text-crimson">WAITLIST</span>
-          </h2>
-          <p style="font-size: 0.95rem; color: var(--color-text-cream); line-height: 1.65; margin-bottom: 24px;">
-            Submit your expression of interest below to join the founding cohort of artists and empathetic listeners.
-          </p>
-
-          <form id="sanctumWaitlistForm" novalidate>
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
-              <div class="form-group">
-                <label for="fullName" class="form-label">Full Name or Artist Pseudonym *</label>
-                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. DussT / Knucklewalka" required>
-              </div>
-
-              <div class="form-group">
-                <label for="email" class="form-label">Email Address *</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="you@domain.com" required>
-              </div>
+        <!-- Pre-Launch Waitlist Action Box -->
+        <div class="sanctum-waitlist-box">
+          <div class="sanctum-waitlist-header">
+            <div>
+              <span class="release-promo-eyebrow">COMMUNITY PRE-LAUNCH / PHASE 1</span>
+              <h3>JOIN THE SANCTUM WAITLIST</h3>
             </div>
+            <span style="font-size: 0.8rem; color: var(--gold); font-family: var(--mono);">OFFICIAL EXPRESSION OF INTEREST</span>
+          </div>
 
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
-              <div class="form-group">
-                <label for="role" class="form-label">Your Primary Role *</label>
-                <select id="role" name="role" class="form-select" required>
-                  <option value="Independent Music Artist">Independent Music Artist (Applying for Verification)</option>
-                  <option value="Empathetic Listener">Empathetic Listener (Discover &amp; Support)</option>
-                  <option value="Visual Artist / Animator">Visual Artist / Animator (Creative Collaborator)</option>
-                  <option value="Audio Engineer / Producer">Audio Engineer / Music Producer</option>
-                  <option value="Mental Health Advocate">Mental Health &amp; Creative Advocate</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="genre" class="form-label">Primary Genre / Artistic Discipline</label>
-                <input type="text" id="genre" name="genre" class="form-input" placeholder="e.g. Underground Rap, Dark Alternative">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="notes" class="form-label">What Does The Sanctum Mean To You? (Optional)</label>
-              <textarea id="notes" name="notes" class="form-textarea" rows="3" placeholder="Share your perspective on music, mental health, or what you hope to experience in the community..."></textarea>
-            </div>
-
-            <div style="margin-top: 16px;">
-              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                ✦ SUBMIT EXPRESSION OF INTEREST
-              </button>
-            </div>
-
-            <div id="sanctumStatusMsg" class="form-feedback-box" style="display: none; margin-top: 20px;"></div>
+          <form id="sanctumWaitlistForm" class="waitlist-form-grid">
+            <input type="text" class="form-input" placeholder="YOUR NAME / ARTIST HANDLE" required>
+            <input type="email" class="form-input" placeholder="EMAIL ADDRESS" required>
+            <select class="form-input form-select" required>
+              <option value="" disabled selected>YOUR ROLE IN THE SANCTUM</option>
+              <option value="Artist">Independent Recording Artist</option>
+              <option value="Listener">Empathetic Listener &amp; Supporter</option>
+              <option value="Collaborator">Visual Artist / Producer</option>
+            </select>
+            <button type="submit" class="button button--solid">
+              REGISTER INTEREST <span>↗</span>
+            </button>
           </form>
+          <div id="waitlistStatus" style="display: none; margin-top: 1rem; font-size: 0.84rem;"></div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Site Footer -->
+  <!-- SITE FOOTER -->
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <img src="assets/images/dusst-logo-concept-alembic.png" alt="Official DussT Logo" style="width: 32px; height: 32px; object-fit: contain;">
-            <span style="font-family: var(--font-gothic); font-size: 1.35rem; letter-spacing: 0.1em; color: var(--color-text-ivory);">DussT</span>
-          </div>
-          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6;">
-            The official portal of recording artist DussT. Dark underground sound, character lore, brand identity suite, and The Sanctum community.
-          </p>
-        </div>
-
-        <div class="footer-nav">
-          <div>
-            <div class="footer-col-title">Navigation</div>
-            <ul class="footer-links-list">
-              <li><a href="index.html">Portal Home</a></li>
-              <li><a href="index.html#music">Music &amp; Releases</a></li>
-              <li><a href="about.html">About DussT</a></li>
-              <li><a href="sanctum.html">The Sanctum</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="footer-col-title">Universe &amp; Lore</div>
-            <ul class="footer-links-list">
-              <li><a href="gallery.html">Visual Vault</a></li>
-              <li><a href="index.html#brand-identity">Brand Identity Suite</a></li>
-              <li><a href="creator.html">Visuals by OQ</a></li>
-              <li><a href="contact.html">Contact &amp; Bookings</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="footer-col-title">Creative Director</div>
-            <ul class="footer-links-list">
-              <li><span style="color: var(--color-text-cream); font-size: 0.88rem;">Quady Oseni (OQ)</span></li>
-              <li><a href="mailto:oseniquady53@gmail.com" style="color: var(--color-gold); font-family: var(--font-mono); font-size: 0.8rem;">oseniquady53@gmail.com</a></li>
-            </ul>
-          </div>
-        </div>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/dusst-logo-concept-alembic.png" alt="DussT Emblem" width="130" height="130">
+        <span class="footer-brand-title">ENTER THE DUSST VXRSE</span>
+        <p class="footer-brand-tagline">
+          Official artist portal for DussT. Dark gothic hip-hop, character visual lore &amp; The Sanctum community.
+        </p>
       </div>
 
-      <div class="footer-bottom">
-        <div>
-          &copy; <span id="currentYear">2026</span> DussT. All rights reserved. "Don't kick the Duss Up."
+      <div class="footer-navs">
+        <div class="footer-col">
+          <span class="footer-col-title">NAVIGATION</span>
+          <nav>
+            <a href="index.html#releases">MUSIC <span>↗</span></a>
+            <a href="index.html#videos">VIDEOS <span>↗</span></a>
+            <a href="index.html#brand-identity">IDENTITY <span>↗</span></a>
+            <a href="about.html">ABOUT <span>↗</span></a>
+            <a href="sanctum.html">THE SANCTUM <span>↗</span></a>
+            <a href="gallery.html">GALLERY <span>↗</span></a>
+            <a href="creator.html">CREATOR <span>↗</span></a>
+            <a href="contact.html">BOOK NOW <span>↗</span></a>
+          </nav>
         </div>
-        <div>
-          Website, 3D character visuals &amp; visualizer by <a href="creator.html" style="color: var(--color-gold); font-weight: 600;">Quady Oseni (OQ)</a>.
+
+        <div class="footer-col">
+          <span class="footer-col-title">STREAMING &amp; DSPs</span>
+          <nav>
+            <a href="https://open.spotify.com" target="_blank" rel="noopener">SPOTIFY <span>↗</span></a>
+            <a href="https://soundcloud.com" target="_blank" rel="noopener">SOUNDCLOUD <span>↗</span></a>
+            <a href="https://music.apple.com" target="_blank" rel="noopener">APPLE MUSIC <span>↗</span></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YOUTUBE <span>↗</span></a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">CONFIRMED SOCIALS</span>
+          <nav>
+            <a href="https://instagram.com" target="_blank" rel="noopener">DUSST INSTAGRAM <span>↗</span></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener">DUSST TIKTOK <span>↗</span></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">DUSST X / TWITTER <span>↗</span></a>
+            <a href="https://discord.com" target="_blank" rel="noopener">THE SANCTUM DISCORD <span>↗</span></a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">COMMUNICATIONS</span>
+          <nav>
+            <a href="mailto:oseniquady53@gmail.com">oseniquady53@gmail.com <span>↗</span></a>
+            <span style="font-size: 0.72rem; color: var(--gold); font-family: var(--mono); margin-top: 4px;">
+              PROPOSED: EnterTheDussVxrse.com
+            </span>
+            <span style="font-size: 0.72rem; color: var(--muted); margin-top: 2px;">
+              CREATOR: QUADY OSENI / OQ
+            </span>
+          </nav>
         </div>
       </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 DUSST. ALL RIGHTS RESERVED.</span>
+      <p>WEBSITE &amp; VISUAL IDENTITY BY QUADY OSENI (OQ) • PROPOSED DOMAIN: ENTERTHEDUSSVXRSE.COM</p>
+      <a href="#top">BACK TO TOP ↑</a>
     </div>
   </footer>
 
-  <script src="js/content-config.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/editorial-motion.js"></script>
 </body>
 </html>
