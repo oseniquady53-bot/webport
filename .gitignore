@@ -1,0 +1,12 @@
+# Binaries and executables
+cloudflared.exe
+*.exe
+
+# Logs and system artifacts
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Archive packages
+*.zip
